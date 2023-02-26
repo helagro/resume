@@ -7,8 +7,6 @@
 
 // =============== PAGE ================
 
-@page
-    margin: 0
 
 body
     margin: 0
@@ -29,11 +27,16 @@ main
     grid-template-columns: var.$page-grid-division
 
 
+header
+    margin-bottom: 2em
+
+
 
 // ============== MAIN CONTENT ============
 
 .infoItem
     padding-left: var.$std-indent * 1.5
+    margin-bottom: 2em
 
 
 
@@ -46,3 +49,15 @@ main
         padding-left: var.$std-indent
         color: #626262
 
+
+// ============= PRINT ==============
+
+@page
+    margin: 3em 0 3em 0
+
+@media print
+    .infoItem
+        page-break-inside: avoid
+
+    main
+        padding: 1em var.$page-padding-right var.$page-padding-vert var.$page-padding-left !important
