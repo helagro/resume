@@ -1,6 +1,6 @@
 h1 {
   color: #2196F3;
-  font-size: 2em;
+  font-size: 2.1em;
   margin-top: 0;
   margin-bottom: 0.01em;
   letter-spacing: 0.06em;
@@ -36,6 +36,7 @@ h1 {
 .mediumInfo {
   color: #484848;
   font-size: 0.9em;
+  line-height: 0.5em;
 }
 
 .smallInfo {
@@ -72,7 +73,12 @@ header {
   margin-bottom: 2em;
 }
 header .mediumInfo {
-  padding-left: 0.9em;
+  margin-left: 0.9em;
+}
+
+.pageContent {
+  margin-left: 0.12em;
+  margin-top: 1em;
 }
 
 .infoItem {
@@ -80,10 +86,10 @@ header .mediumInfo {
   margin-bottom: 2em;
 }
 
-.sideContentSection {
+.rightColumnSection {
   margin-top: 1.4em;
 }
-.sideContentSection .largeInfo {
+.rightColumnSection .largeInfo {
   padding-left: 0.6em;
   color: #626262;
 }
