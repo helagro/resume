@@ -16,31 +16,31 @@ h1 {
 }
 
 .itemHeader {
-  color: #212121;
+  color: #3a3a3a;
   font-size: 1.15em;
   line-height: 0.8em;
   font-weight: 500;
 }
 
 .mainText {
-  color: #212121;
+  color: #1b1b1b;
   font-size: 0.9em;
 }
 
 .largeInfo {
-  color: #484848;
+  color: #3a3a3a;
   font-size: 1em;
   line-height: 0.5em;
 }
 
 .mediumInfo {
-  color: #484848;
+  color: #3a3a3a;
   font-size: 0.9em;
   line-height: 0.5em;
 }
 
 .smallInfo {
-  color: #757575;
+  color: #818181;
   line-height: 0.5em;
   font-size: 0.8em;
 }
