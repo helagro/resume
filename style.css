@@ -1,3 +1,39 @@
+.name {
+  color: #2196F3;
+  font-size: 1.8em;
+  margin-top: 0;
+  margin-bottom: 0.01em;
+}
+
+.itemHeader {
+  color: #212121;
+  font-size: 1.15em;
+  line-height: 0.8em;
+}
+
+.mainText {
+  color: #212121;
+  font-size: 0.9em;
+  line-height: 0.9em;
+}
+
+.largeInfo {
+  color: #484848;
+  font-size: 1em;
+  line-height: 0.5em;
+}
+
+.mediumInfo {
+  color: #484848;
+  font-size: 0.9em;
+}
+
+.smallInfo {
+  color: #757575;
+  line-height: 0.3em;
+  font-size: 0.9em;
+}
+
 * {
   font-family: "EB Garamond";
 }
@@ -17,7 +53,7 @@ main {
   max-width: 21cm;
   height: 29.7cm;
   margin: 0 auto;
-  padding: 3em 2em;
+  padding: 3em 1em 3em 3.8em;
   left: 0;
   right: 0;
   background-color: #fff;
@@ -25,43 +61,14 @@ main {
   grid-template-columns: 3fr 1fr;
 }
 
-.name {
-  color: #2196F3;
-  font-size: 1.8em;
-  margin-top: 0;
-  margin-bottom: 0.01em;
-}
-
-.contactInfo {
-  color: #757575;
-  font-size: 7.9pt;
-}
-
 .infoItem {
-  padding: 0.8em;
+  padding-left: 0.9em;
 }
 
-.groupHeader {
-  color: #212121;
-  font-size: 12.3pt;
+.sideContentSection {
+  margin-top: 1.4em;
 }
-
-.itemHeader {
-  color: #212121;
-  font-size: 12pt;
-}
-
-.mainText {
-  color: #212121;
-  font-size: 9.5pt;
-}
-
-.largeInfo {
-  color: #212121;
-  font-size: 0.9em;
-}
-
-.smallInfo {
-  color: #757575;
-  font-size: 0.7em;
+.sideContentSection .largeInfo {
+  padding-left: 0.6em;
+  color: #626262;
 }/*# sourceMappingURL=style.css.map */

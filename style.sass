@@ -1,4 +1,5 @@
 @use "_var"
+@use "_text"
     
 *
     font-family: "EB Garamond"
@@ -20,45 +21,28 @@ main
     max-width: 21cm
     height: 29.7cm
     margin: 0 auto
-    padding: var.$page-padding-vert var.$page-padding-horiz
+    padding: var.$page-padding-vert var.$page-padding-right var.$page-padding-vert var.$page-padding-left
     left: 0
     right: 0 
     background-color: var.$page-color
     display: grid
     grid-template-columns: var.$page-grid-division
 
-.name
-    color: var.$strong-color
-    font-size: 1.8em
-    margin-top: 0
-    margin-bottom: 0.01em
 
-.contactInfo
-    color: #757575
-    font-size: 7.9pt
+
+// ============== MAIN CONTENT ============
 
 .infoItem
-    padding: 0.8em
-
-.groupHeader
-    color: #212121
-    font-size: 12.3pt
-
-.itemHeader
-    color: #212121
-    font-size: 12pt
-
-.mainText
-    color: #212121
-    font-size: 9.5pt
+    padding-left: var.$std-indent * 1.5
 
 
-// ========== INFO ============
 
-.largeInfo
-    color: #212121
-    font-size: 0.9em  
+// ========== SIDE CONTENT ===========
 
-.smallInfo
-    color: #757575
-    font-size: 0.7em
+.sideContentSection
+    margin-top: var.$side-content-padding-top
+
+    .largeInfo
+        padding-left: var.$std-indent
+        color: #626262
+
