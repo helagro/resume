@@ -24,7 +24,7 @@ section
     background-color: var.$page-color
     display: grid
     grid-template-columns: var.$page-grid-division
-    box-shadow: 0.1em 0.1em 0.5em #bdbdbd
+    box-shadow: 0.1em 0.1em 0.5em var.$shadow-color
 
 header
     margin-bottom: 2em
@@ -39,7 +39,7 @@ header
 // ============== MAIN CONTENT ============
 
 .infoItem
-    padding-left: var.$std-indent * 1.5
+    padding-left: var.$std-indent
     margin-bottom: 2em
 
 
@@ -47,11 +47,21 @@ header
 // ========== SIDE CONTENT ===========
 
 .rightColumnSection
-    margin-top: var.$side-content-padding-top
+    margin-top: 1.8em
 
-    .largeInfo
-        padding-left: var.$std-indent
-        color: #626262
+
+// ============ OTHER ===============
+
+.oneLineInfo
+    margin-left: var.$std-indent * 0.5
+    display: grid
+    grid-auto-columns: max-content
+    column-gap: 0.8em
+    grid-auto-flow: column
+
+.columnDivider 
+    border-right: 0.07em solid var.$light-gray
+    margin: 0.6em 0 0.5em 0
 
 
 // ============= PRINT ==============

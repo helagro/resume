@@ -1,21 +1,21 @@
 h1 {
   color: #2196F3;
-  font-size: 2.1em;
+  font-size: 2.2em;
   margin-top: 0;
-  margin-bottom: 0.01em;
+  margin-bottom: 0.1em;
   letter-spacing: 0.06em;
   font-weight: 500;
 }
 
-.groupHeader {
+h2 {
   color: #818181;
   font-size: 1.3em;
   line-height: 1.3em;
-  font-weight: 200;
+  font-weight: 100;
   letter-spacing: 0.08em;
 }
 
-.itemHeader {
+h3 {
   color: #3a3a3a;
   font-size: 1.15em;
   line-height: 0.8em;
@@ -28,9 +28,9 @@ h1 {
 }
 
 .largeInfo {
-  color: #3a3a3a;
+  color: #1b1b1b;
   font-size: 1em;
-  line-height: 0.5em;
+  margin: 0.6em 0;
 }
 
 .mediumInfo {
@@ -82,16 +82,26 @@ header .mediumInfo {
 }
 
 .infoItem {
-  padding-left: 0.9em;
+  padding-left: 0.6em;
   margin-bottom: 2em;
 }
 
 .rightColumnSection {
-  margin-top: 1.4em;
+  margin-top: 1.8em;
 }
-.rightColumnSection .largeInfo {
-  padding-left: 0.6em;
-  color: #626262;
+
+.oneLineInfo {
+  margin-left: 0.3em;
+  display: grid;
+  grid-auto-columns: max-content;
+  -moz-column-gap: 0.8em;
+       column-gap: 0.8em;
+  grid-auto-flow: column;
+}
+
+.columnDivider {
+  border-right: 0.07em solid #818181;
+  margin: 0.6em 0 0.5em 0;
 }
 
 @page {
