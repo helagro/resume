@@ -14,17 +14,17 @@ body
     height: 100vh
     background-color: var.$behind-page-color
 
-main
-    position: absolute
+section
     max-width: 21cm
-    height: 29.7cm
-    margin: 0 auto
+    min-height: 29.7cm
+    margin: 1em auto
     padding: var.$page-padding-vert var.$page-padding-right var.$page-padding-vert var.$page-padding-left
     left: 0
     right: 0 
     background-color: var.$page-color
     display: grid
     grid-template-columns: var.$page-grid-division
+    box-shadow: 0.1em 0.1em 0.5em #bdbdbd
 
 
 header
@@ -62,5 +62,9 @@ header
     .infoItem
         page-break-inside: avoid
 
-    main
+    section
         padding: 1em var.$page-padding-right var.$page-padding-vert var.$page-padding-left !important
+        margin: 0
+        box-shadow: none
+        height: auto
+        min-height: auto

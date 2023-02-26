@@ -4,7 +4,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 0.01em;
   letter-spacing: 0.06em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .groupHeader {
@@ -55,17 +55,17 @@ body {
   background-color: #f0f0f0;
 }
 
-main {
-  position: absolute;
+section {
   max-width: 21cm;
-  height: 29.7cm;
-  margin: 0 auto;
+  min-height: 29.7cm;
+  margin: 1em auto;
   padding: 3em 1em 3em 3.8em;
   left: 0;
   right: 0;
   background-color: #fff;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  box-shadow: 0.1em 0.1em 0.5em #bdbdbd;
 }
 
 header {
@@ -95,7 +95,11 @@ header .mediumInfo {
   .infoItem {
     page-break-inside: avoid;
   }
-  main {
+  section {
     padding: 1em 1em 3em 3.8em !important;
+    margin: 0;
+    box-shadow: none;
+    height: auto;
+    min-height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
