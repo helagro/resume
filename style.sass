@@ -29,6 +29,14 @@ section
 header
     margin-bottom: 2em
 
+    .floor
+        margin-bottom: 0.5em
+        height: min-content
+        margin-top: auto
+
+    .columns
+        margin-left: var.$std-indent * 0.7
+
     .mediumInfo
         margin-left: var.$std-indent *1.5
 
@@ -40,7 +48,8 @@ header
 
 .infoItem
     padding-left: var.$std-indent
-    margin-bottom: 2em
+    margin-bottom: 2.5em
+    margin-top: 1.5em
 
 
 
@@ -52,12 +61,17 @@ header
 
 // ============ OTHER ===============
 
-.oneLineInfo
-    margin-left: var.$std-indent * 0.5
+.profilePic
+    border-radius: 50%  
+    margin-left: auto
+    margin-right: auto
+    object-fit: cover
+
+.columns
     display: grid
     grid-auto-columns: max-content
-    column-gap: 0.8em
     grid-auto-flow: column
+    column-gap: 5%
 
 .columnDivider 
     border-right: 0.07em solid var.$light-gray
@@ -74,7 +88,7 @@ header
         page-break-inside: avoid
 
     section
-        padding: 1em var.$page-padding-right var.$page-padding-vert var.$page-padding-left !important
+        padding: 0 var.$page-padding-right var.$page-padding-vert var.$page-padding-left !important
         margin: 0
         box-shadow: none
         height: auto

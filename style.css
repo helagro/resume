@@ -72,6 +72,15 @@ section {
 header {
   margin-bottom: 2em;
 }
+header .floor {
+  margin-bottom: 0.5em;
+  height: -moz-min-content;
+  height: min-content;
+  margin-top: auto;
+}
+header .columns {
+  margin-left: 0.42em;
+}
 header .mediumInfo {
   margin-left: 0.9em;
 }
@@ -83,20 +92,28 @@ header .mediumInfo {
 
 .infoItem {
   padding-left: 0.6em;
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
 }
 
 .rightColumnSection {
   margin-top: 1.8em;
 }
 
-.oneLineInfo {
-  margin-left: 0.3em;
+.profilePic {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.columns {
   display: grid;
   grid-auto-columns: max-content;
-  -moz-column-gap: 0.8em;
-       column-gap: 0.8em;
   grid-auto-flow: column;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
 }
 
 .columnDivider {
@@ -112,7 +129,7 @@ header .mediumInfo {
     page-break-inside: avoid;
   }
   section {
-    padding: 1em 1em 3em 3.8em !important;
+    padding: 0 1em 3em 3.8em !important;
     margin: 0;
     box-shadow: none;
     height: auto;
