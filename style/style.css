@@ -214,6 +214,10 @@ img {
   display: none;
 }
 
+input[type=checkbox] {
+  accent-color: #2196F3;
+}
+
 .credit {
   position: fixed;
   left: 50%;
