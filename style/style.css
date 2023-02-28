@@ -46,9 +46,18 @@ h3 {
 }
 
 .optionsPanel {
-  position: fixed;
-  right: 2em;
-  top: 2em;
+  background-color: #dfdfdf;
+  padding: 0.5em 2em 2em 1em;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 3em;
+  border: 0.01em solid #bdbdbd;
+  display: grid;
+  row-gap: 0.3em;
+}
+.optionsPanel h2 {
+  text-align: center;
+  margin-bottom: 0.2em;
 }
 
 @media print {
@@ -56,7 +65,7 @@ h3 {
     display: none;
   }
 }
-@media screen and (max-width: 35cm) {
+@media screen and (max-width: 28cm) {
   .optionsPanel {
     display: none;
   }
@@ -75,7 +84,7 @@ body {
 section {
   max-width: 21cm;
   min-height: 29.7cm;
-  margin: 1em auto;
+  margin: 1em 0;
   padding: 3em 1em 3em 3.8em;
   left: 0;
   right: 0;
@@ -85,7 +94,7 @@ section {
   grid-template-rows: max-content max-content;
   box-shadow: 0.1em 0.1em 0.5em #bdbdbd;
 }
-@media (max-width: 45em) {
+@media (max-width: 42em) {
   section {
     grid-template-columns: auto;
     padding-right: 2em;
@@ -119,33 +128,20 @@ header .mediumInfo {
   margin-top: 1em;
 }
 
+main {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  margin: auto;
+  width: -moz-max-content;
+  width: max-content;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+}
+
 .infoItem {
   padding-left: 0.6em;
   margin-bottom: 2.5em;
   margin-top: 1.5em;
-}
-
-.rightColumnSection {
-  margin-top: 1.8em;
-}
-.rightColumnSection h2 {
-  color: #3a3a3a;
-}
-@media (max-width: 45em) {
-  .rightColumnSection h2 {
-    color: #818181;
-  }
-}
-
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  display: none;
 }
 
 .profilePic {
@@ -174,6 +170,29 @@ img {
   margin: 0.6em 0 0.5em 0;
 }
 
+.rightColumnSection {
+  margin-top: 1.8em;
+}
+.rightColumnSection h2 {
+  color: #3a3a3a;
+}
+@media (max-width: 42em) {
+  .rightColumnSection h2 {
+    color: #818181;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: none;
+}
+
 @page {
   margin: 0;
 }
@@ -188,5 +207,8 @@ img {
     min-height: auto;
     width: 100%;
     max-width: 100%;
+  }
+  main {
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
