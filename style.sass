@@ -18,16 +18,22 @@ section
     max-width: 21cm
     min-height: 29.7cm
     margin: 1em auto
-    padding: var.$page-padding-vert var.$page-padding-right var.$page-padding-vert var.$page-padding-left
+    padding: 3em 1em 3em 3.8em
     left: 0
     right: 0 
     background-color: var.$page-color
     display: grid
     grid-template-columns: var.$page-grid-division
+    grid-template-rows: max-content max-content
     box-shadow: 0.1em 0.1em 0.5em var.$shadow-color
 
-    @media (max-width: 40em)
+    @media (max-width: var.$split-to-rows-size)
         grid-template-columns: auto
+        padding-right: 2em
+    
+    @media (max-width: 30em)
+        padding: 1em
+        margin-top: 0
 
 header
     margin-bottom: 2em
@@ -63,6 +69,10 @@ header
 
     h2
         color: var.$medium-gray
+
+    @media (max-width: var.$split-to-rows-size)
+        h2
+            color: var.$light-gray
 
 
 // ============ OTHER ===============
