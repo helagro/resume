@@ -51,8 +51,7 @@ h3 {
 
 .optionsPanel {
   padding: 0.2em 2em 2em 1em;
-  height: -moz-max-content;
-  height: max-content;
+  height: 5em;
   margin-top: 3em;
   display: grid;
   border-radius: 0.2em;
