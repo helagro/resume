@@ -16,7 +16,7 @@ phoneElem.href = "tel:" + phoneNr
 
 
 
-
+// ========== TOGGLE SHOW IMAGES =========
 
 function setShowImages(value){
     const images = document.getElementsByTagName("img")
