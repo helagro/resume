@@ -39,8 +39,6 @@ function fillText(jsonObj){
         const value = jsonObj[key]
         const isArray = Array.isArray(value)
 
-        console.log(key, value)
-
         if(isArray){
             fillArray(key, value)
         } else{
@@ -57,22 +55,17 @@ function fillArray(name, jsonArr){
     for(const item of jsonArr){
         const newElem = template.content.cloneNode(true)
         if(typeof item == "string") {
-            console.log("b", item)
             newElem.firstChild.textContent = item
-        }
-        else{
+        } else{
             for(const key in item){
                 const value = item[key]
-                const elem = newElem.querySelectorAll("." + key)[0]
-                console.log("fawfwa", elem)
+                const elem = newElem.querySelector("." + key)
     
                 elem.textContent = value
             }
         }
 
         parent.appendChild(newElem)
-
-        console.log(item, newElem)
     }
 }
 
