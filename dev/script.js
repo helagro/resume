@@ -1,7 +1,7 @@
 function scramble(s){
     const base64 = Buffer.from(s).toString('base64')
-    const halfLen = Math.floor(base64.length / 2)
-    return base64.slice(0, halfLen).split("").reverse().join("") + base64.slice(halfLen)
+    const splitI = Math.floor(base64.length / 2.5)
+    return base64.slice(0, splitI).split("").reverse().join("") + base64.slice(splitI)
 }
 
 const input = process.argv[2]
