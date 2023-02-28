@@ -89,6 +89,7 @@ h3 {
   }
 }
 section {
+  z-index: 2;
   max-width: 21cm;
   min-height: 29.7cm;
   margin: 1em 0;
@@ -200,6 +201,7 @@ main {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  padding-bottom: 2em;
 }
 
 a {
@@ -211,6 +213,26 @@ a:hover {
 
 img {
   display: none;
+}
+
+.credit {
+  position: fixed;
+  left: 50%;
+  margin-left: 6cm;
+  bottom: 1em;
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media screen and (max-width: 21cm) {
+  .credit {
+    margin-left: 0;
+    right: 10%;
+    left: unset;
+  }
+}
+.credit * {
+  position: relative;
 }
 
 @page {
@@ -231,5 +253,8 @@ img {
   main {
     margin: 0;
     max-width: none;
+  }
+  .credit {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

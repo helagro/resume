@@ -21,6 +21,7 @@ main
     max-width: max-content
     column-gap: 0.8em
     user-select: none
+    padding-bottom: 2em
 
 
 a
@@ -30,6 +31,23 @@ a
 
 img
     display: none
+
+
+.credit
+    position: fixed
+    left: 50%
+    margin-left: 6cm
+    bottom: 1em
+    display: block
+    width: max-content
+
+    @media screen and (max-width: 21cm)
+        margin-left: 0
+        right: 10%
+        left: unset
+
+    *
+        position: relative
 
 // ============= PRINT ==============
 
@@ -51,3 +69,6 @@ img
     main
         margin: 0
         max-width: none
+
+    .credit
+        display: none
