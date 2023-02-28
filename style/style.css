@@ -224,15 +224,18 @@ img {
   width: -moz-max-content;
   width: max-content;
 }
+.credit * {
+  position: relative;
+}
+.credit a {
+  color: #2196F3;
+}
 @media screen and (max-width: 21cm) {
   .credit {
     margin-left: 0;
     right: 10%;
     left: unset;
   }
-}
-.credit * {
-  position: relative;
 }
 
 @page {
