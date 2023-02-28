@@ -68,6 +68,11 @@ section {
   grid-template-columns: 3fr 1fr;
   box-shadow: 0.1em 0.1em 0.5em #bdbdbd;
 }
+@media (max-width: 40em) {
+  section {
+    grid-template-columns: auto;
+  }
+}
 
 header {
   margin-bottom: 2em;
@@ -99,6 +104,9 @@ header .mediumInfo {
 .rightColumnSection {
   margin-top: 1.8em;
 }
+.rightColumnSection h2 {
+  color: #3a3a3a;
+}
 
 .profilePic {
   border-radius: 50%;
@@ -106,6 +114,11 @@ header .mediumInfo {
   margin-right: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 30em) {
+  .profilePic {
+    display: none;
+  }
 }
 
 .columns {
@@ -122,17 +135,18 @@ header .mediumInfo {
 }
 
 @page {
-  margin: 3em 0 3em 0;
+  margin: 0;
 }
 @media print {
   .infoItem {
     page-break-inside: avoid;
   }
   section {
-    padding: 0 1em 3em 3.8em !important;
     margin: 0;
     box-shadow: none;
     height: auto;
     min-height: auto;
+    width: 100%;
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
