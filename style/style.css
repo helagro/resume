@@ -29,7 +29,7 @@ h3 {
 
 .largeInfo {
   color: #1b1b1b;
-  font-size: 1em;
+  font-size: 1rem;
   margin: 0.6em 0;
 }
 
@@ -45,19 +45,37 @@ h3 {
   font-size: 0.8em;
 }
 
+.optionsPanelContainer {
+  position: relative;
+}
+
 .optionsPanel {
-  background-color: #dfdfdf;
-  padding: 0.5em 2em 2em 1em;
+  padding: 0.2em 2em 2em 1em;
   height: -moz-max-content;
   height: max-content;
   margin-top: 3em;
-  border: 0.01em solid #bdbdbd;
   display: grid;
-  row-gap: 0.3em;
+  border-radius: 0.2em;
+  position: fixed;
+}
+.optionsPanel * {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
 }
 .optionsPanel h2 {
-  text-align: center;
-  margin-bottom: 0.2em;
+  color: #1b1b1b;
+  margin-bottom: 0.4em;
+}
+.optionsPanel button {
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 @media print {
@@ -65,29 +83,16 @@ h3 {
     display: none;
   }
 }
-@media screen and (max-width: 28cm) {
+@media screen and (max-width: 30cm) {
   .optionsPanel {
     display: none;
   }
 }
-* {
-  font-family: "EB Garamond";
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  height: 100vh;
-  background-color: #f0f0f0;
-}
-
 section {
   max-width: 21cm;
   min-height: 29.7cm;
   margin: 1em 0;
-  padding: 3em 1em 3em 3.8em;
-  left: 0;
-  right: 0;
+  padding: 2em 1em 3em 3.8em;
   background-color: #fff;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -128,16 +133,6 @@ header .mediumInfo {
   margin-top: 1em;
 }
 
-main {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  margin: auto;
-  width: -moz-max-content;
-  width: max-content;
-  -moz-column-gap: 1em;
-       column-gap: 1em;
-}
-
 .infoItem {
   padding-left: 0.6em;
   margin-bottom: 2.5em;
@@ -153,7 +148,7 @@ main {
 }
 @media (max-width: 30em) {
   .profilePic {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -166,12 +161,13 @@ main {
 }
 
 .columnDivider {
-  border-right: 0.07em solid #818181;
-  margin: 0.6em 0 0.5em 0;
+  border-right: 0.1em solid #818181;
+  height: 50%;
+  margin-top: 0.7em;
 }
 
 .rightColumnSection {
-  margin-top: 1.8em;
+  margin-top: 1em;
 }
 .rightColumnSection h2 {
   color: #3a3a3a;
@@ -180,6 +176,30 @@ main {
   .rightColumnSection h2 {
     color: #818181;
   }
+}
+
+* {
+  font-family: "EB Garamond";
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto max-content;
+  margin: auto;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  -moz-column-gap: 0.8em;
+       column-gap: 0.8em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 a {
@@ -195,13 +215,13 @@ img {
 
 @page {
   margin: 0;
+  margin-right: 3em;
 }
 @media print {
   .infoItem {
     page-break-inside: avoid;
   }
   section {
-    margin: 0;
     box-shadow: none;
     height: auto;
     min-height: auto;
@@ -210,5 +230,6 @@ img {
   }
   main {
     margin: 0;
+    max-width: none;
   }
 }/*# sourceMappingURL=style.css.map */

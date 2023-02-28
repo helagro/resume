@@ -49,14 +49,17 @@
     
         </section>    
     
-        <div class="optionsPanel">
-            <h2>Options</h2>
-            <span>
-                <input type="checkbox" name="showImages" onchange="setShowImages(this.checked)">
-                <label for="showImages"><span class="largeInfo">Show Images</span></label>
-            </span>
-            <button onclick="print()">Print</button>
+        <div class="optionsPanelContainer">
+            <div class="optionsPanel">
+                <h2>Options</h2>
+                <span>
+                    <label for="showImages"><span class="largeInfo">Show Images</span></label>
+                    <input type="checkbox" name="showImages" id="showImages" onchange="setShowImages(this.checked)">
+                </span>
+                <button onclick="print()"><p class="largeInfo">Print</p></button>
+            </div>
         </div>
+
     </main>
     
     <script src="script.js"></script>
