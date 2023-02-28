@@ -69,7 +69,7 @@ section {
   grid-template-rows: max-content max-content;
   box-shadow: 0.1em 0.1em 0.5em #bdbdbd;
 }
-@media (max-width: 40em) {
+@media (max-width: 45em) {
   section {
     grid-template-columns: auto;
     padding-right: 2em;
@@ -115,7 +115,7 @@ header .mediumInfo {
 .rightColumnSection h2 {
   color: #3a3a3a;
 }
-@media (max-width: 40em) {
+@media (max-width: 45em) {
   .rightColumnSection h2 {
     color: #818181;
   }
