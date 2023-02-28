@@ -1,5 +1,3 @@
-
-
 // =========== LOAD EMAIL AND PHONE NUMBER ============
 
 const unscramble = s => atob(s.slice(0, Math.floor(s.length / 2.5)).split("").reverse().join("") + s.slice(Math.floor(s.length / 2.5)))
@@ -26,3 +24,56 @@ function setShowImages(value){
         image.style.display = displayValue
     }
 }
+
+// ============= LOAD TEXT ===============
+
+
+function loadText(){
+    fetch('content/swedish.json')
+        .then(response => response.json())
+        .then(data => fillText(data))
+}
+
+function fillText(jsonObj){
+    for(const key in jsonObj){
+        const value = jsonObj[key]
+        const isArray = Array.isArray(value)
+
+        console.log(key, value)
+
+        if(isArray){
+            fillArray(key, value)
+        } else{
+            const elem = document.getElementById(key)
+            elem.textContent = value
+        }
+    }
+}
+
+function fillArray(name, jsonArr){
+    const template = document.getElementById(name)
+    const parent = template.parentElement
+
+    for(const item of jsonArr){
+        const newElem = template.content.cloneNode(true)
+        if(typeof item == "string") {
+            console.log("b", item)
+            newElem.firstChild.textContent = item
+        }
+        else{
+            for(const key in item){
+                const value = item[key]
+                const elem = newElem.querySelectorAll("." + key)[0]
+                console.log("fawfwa", elem)
+    
+                elem.textContent = value
+            }
+        }
+
+        parent.appendChild(newElem)
+
+        console.log(item, newElem)
+    }
+}
+
+loadText()

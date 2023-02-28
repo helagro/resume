@@ -1,0 +1,15 @@
+{
+    "workExperience": "ARBETSLIVSERFARENHET",
+    "workExperienceItem": [
+        {
+            "title": "Butiksbiträde, Ica Stillingsön",
+            "text": "Duis eleifend metus est, et bibendum orci bibendum eget. Nunc et eros imperdiet, suscipit dui ut,",
+            "time": "aug 2018 — juni 2019"
+        }
+    ],
+    "qualifications": "KOMPETENS",
+    "qualification": [
+        "Mobile app development",
+        "Web development"
+    ]
+}
