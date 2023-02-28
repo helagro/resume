@@ -197,10 +197,13 @@ main {
   max-width: max-content;
   -moz-column-gap: 0.8em;
        column-gap: 0.8em;
+  padding-bottom: 2em;
+}
+
+label {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  padding-bottom: 2em;
 }
 
 a {
