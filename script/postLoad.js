@@ -1,13 +1,15 @@
+
+function onBodyLoaded(){
+    fillTextIfReady()
+}
+
+
 // =========== LOAD EMAIL AND PHONE NUMBER ============
 
-const unscramble = s => atob(s.slice(0, Math.floor(s.length / 2.5)).split("").reverse().join("") + s.slice(Math.floor(s.length / 2.5)))
-
-const emailAddr = unscramble("B0bydWYsVGavdXRsb29rLmNvbQ==")
 const emailElem = document.getElementById("email")
 emailElem.textContent = emailAddr
 emailElem.href = "mailto:" + emailAddr
 
-const phoneNr = unscramble("TLzcDMk5OS05OTk5")
 const phoneElem = document.getElementById("phone")
 phoneElem.textContent = phoneNr
 phoneElem.href = "tel:" + phoneNr
@@ -28,15 +30,22 @@ function setShowImages(value){
 // ============= LOAD TEXT ===============
 
 
-function loadText(){
-    fetch('content/swedish.json')
-        .then(response => response.json())
-        .then(data => fillText(data))
+
+
+let fillTextWasRun = false
+function fillTextIfReady(){
+    if(document.readyState === "loading") return
+    if(typeof content === "undefined") return
+    if(fillTextWasRun) return
+    fillTextWasRun = true
+
+    fillText()
 }
 
-function fillText(jsonObj){
-    for(const key in jsonObj){
-        const value = jsonObj[key]
+
+function fillText(){
+    for(const key in content){
+        const value = content[key]
         const isArray = Array.isArray(value)
 
         if(isArray){
@@ -68,5 +77,3 @@ function fillArray(name, jsonArr){
         parent.appendChild(newElem)
     }
 }
-
-loadText()
