@@ -1,8 +1,8 @@
 
 // ============= LOAD CONTENT ===============
 
-function loadContentFile(){
-    fetch('content/swedish.json')
+function loadContentFile(language){
+    fetch(`content/${language}.json`)
         .then(response => response.json())
         .then(data => contentDidLoad(data))
 }
@@ -10,10 +10,10 @@ function loadContentFile(){
 let content
 function contentDidLoad(data){
     content = data
-    if(typeof fillContentIfReady === "function") //postLoad.js has loaded
-        fillContentIfReady()
+    if(typeof renderContentIfReady === "function") //postLoad.js has loaded
+        renderContentIfReady()
 }
 
 
 
-loadContentFile()
+loadContentFile("swedish")

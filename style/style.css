@@ -76,6 +76,9 @@ h3 {
   height: -moz-min-content;
   height: min-content;
 }
+.optionsPanel #languageSelect {
+  display: none;
+}
 
 @media print {
   .optionsPanel {
@@ -90,6 +93,8 @@ h3 {
 section {
   z-index: 2;
   max-width: 21cm;
+  width: 100vw;
+  box-sizing: border-box;
   min-height: 29.7cm;
   margin: 1em 0;
   padding: 2em 1em 3em 3.8em;

@@ -15,58 +15,20 @@ function loadContactDetails(){
     phoneElem.href = "tel:" + phoneNr
 }
 
-
-// ============= LOAD CONTENT ===============
-
-let hasFilledContent = false
-function fillContentIfReady(){
-    if(document.readyState === "loading") return
-    if(typeof content === "undefined") return
-    if(hasFilledContent) return
-    hasFilledContent = true
-
-    fillObj(document.body, content)
+function changeLanguage(){
+    const language = document.getElementById("languageSelect").value
+    console.log(language)
+    clearNewRenderedElems()
+    hasFilledContent = false
+    loadContentFile(language)
 }
 
-
-function fillObj(parent, obj){
-    for(const key in obj){
-        const value = obj[key]
-        fillItem(parent, key, value)
+function clearNewRenderedElems(){
+    for(const elem of newRenderedNodes){
+        console.log(elem)
+        elem.remove()
     }
 }
-
-function fillArray(name, jsonArr){
-    const template = document.getElementById(name)
-    const parent = template.parentElement
-
-    for(const obj of jsonArr){
-        const newElem = template.content.cloneNode(true)
-        fillItem(newElem, null, obj)
-        parent.appendChild(newElem)
-    }
-}
-
-function fillItem(parent, key, value){
-    if (typeof value == "string")
-        fillString(parent, key, value)
-    else if(Array.isArray(value)) 
-        fillArray(key, value)
-    else
-        fillObj(parent, value)
-}
-
-function fillString(parent, key, value){
-    if(parent == document.body) 
-        document.getElementById(key).textContent = value
-    else if(key === null) //string in array
-        parent.firstChild.textContent = value
-    else // elem in obj in array
-        parent.querySelector("." + key).textContent = value
-}
-
-
 
 // ============= RUN =============
-fillContentIfReady()
 loadContactDetails()
