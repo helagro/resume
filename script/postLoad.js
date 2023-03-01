@@ -25,19 +25,20 @@ function fillContentIfReady(){
     if(hasFilledContent) return
     hasFilledContent = true
 
-    fillContent(document.body)
+    fillContent(document.body, content)
 }
 
-function fillContent(parent){
-    for(const key in content){
-        const value = content[key]
+function fillContent(parent, obj){
+    for(const key in obj){
+        const value = obj[key]
 
         if(Array.isArray(value)) 
             fillArray(key, value)
-        else if (typeof value == "string")
-            fillAttr(document.getElementById(key), value)
-        else
-            fillObj(parent, value)
+        else if (typeof value == "string"){
+            const elem = parent == document.body ? document.getElementById(key) : parent.querySelector("." + key)
+            fillAttr(elem, value)
+        } else
+            fillContent(parent, value)
     }
 }
 
@@ -50,20 +51,12 @@ function fillArray(name, jsonArr){
         if(typeof obj == "string")
             fillAttr(newElem.firstChild, obj)
         else
-            fillObj(newElem, obj)
+            fillContent(newElem, obj)
 
         parent.appendChild(newElem)
     }
 }
 
-function fillObj(elem, object){
-    for(const key in object){
-        const attrElem = elem.querySelector("." + key)
-        const value = object[key]
-
-        fillAttr(attrElem, value)
-    }
-}
 
 const fillAttr = (elem, value) => elem.textContent = value
 
