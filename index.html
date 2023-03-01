@@ -9,12 +9,12 @@
     <title>Resume</title>
     <script src="script/preLoad.js"></script>
 </head>
-<body onload="onBodyLoaded()">
+<body>
     <main>
         <section>
             <div class="leftColumn">
                 <header class="columns">
-                    <img class="profilePic" src="res/pexels-jornt-hornstra-12134422.jpg" width="110px" height="110px">
+                    <img class="profilePic" id="profilePic" src="res/pexels-jornt-hornstra-12134422.jpg" width="110px" height="110px">
                     <div class="floor">
                         <h1>Henrik Lagrosen</h1>
                         <div class="columns">
@@ -53,7 +53,7 @@
                 <h2>Options</h2>
                 <span>
                     <label for="showImages"><span class="largeInfo">Show Image</span></label>
-                    <input type="checkbox" name="showImages" id="showImages" autocomplete="off" onchange="setShowImages(this.checked)">
+                    <input type="checkbox" name="showImages" id="showImages" autocomplete="off" onchange="showPFP(this.checked)">
                 </span>
                 <button onclick="print()"><p class="largeInfo">Print</p></button>
             </div>

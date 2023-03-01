@@ -1,49 +1,34 @@
 
-function onBodyLoaded(){
-    fillTextIfReady()
+const showPFP = (value) => document.getElementById("profilePic").style.display = value ? "unset" : "none"
+
+function loadContactDetails(){
+    const unscramble = s => atob(s.slice(0, Math.floor(s.length / 2.5)).split("").reverse().join("") + s.slice(Math.floor(s.length / 2.5)))
+    const emailAddr = unscramble("B0bydWYsVGavdXRsb29rLmNvbQ==")
+    const phoneNr = unscramble("TLzcDMk5OS05OTk5")
+
+    const emailElem = document.getElementById("email")
+    emailElem.textContent = emailAddr
+    emailElem.href = "mailto:" + emailAddr
+    
+    const phoneElem = document.getElementById("phone")
+    phoneElem.textContent = phoneNr
+    phoneElem.href = "tel:" + phoneNr
 }
 
 
-// =========== LOAD EMAIL AND PHONE NUMBER ============
+// ============= LOAD CONTENT ===============
 
-const emailElem = document.getElementById("email")
-emailElem.textContent = emailAddr
-emailElem.href = "mailto:" + emailAddr
-
-const phoneElem = document.getElementById("phone")
-phoneElem.textContent = phoneNr
-phoneElem.href = "tel:" + phoneNr
-
-
-
-// ========== TOGGLE SHOW IMAGES =========
-
-function setShowImages(value){
-    const images = document.getElementsByTagName("img")
-    const displayValue = value ? "unset" : "none"
-
-    for(const image of images){
-        image.style.display = displayValue
-    }
-}
-
-// ============= LOAD TEXT ===============
-
-
-
-
-let fillTextWasRun = false
-function fillTextIfReady(){
+let hasFilledContent = false
+function fillContentIfReady(){
     if(document.readyState === "loading") return
     if(typeof content === "undefined") return
-    if(fillTextWasRun) return
-    fillTextWasRun = true
+    if(hasFilledContent) return
+    hasFilledContent = true
 
-    fillText()
+    fillContent()
 }
 
-
-function fillText(){
+function fillContent(){
     for(const key in content){
         const value = content[key]
         const isArray = Array.isArray(value)
@@ -77,3 +62,7 @@ function fillArray(name, jsonArr){
         parent.appendChild(newElem)
     }
 }
+
+// ============= RUN =============
+fillContentIfReady()
+loadContactDetails()
