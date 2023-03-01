@@ -25,20 +25,14 @@ function fillContentIfReady(){
     if(hasFilledContent) return
     hasFilledContent = true
 
-    fillContent(document.body, content)
+    fillObj(document.body, content)
 }
 
-function fillContent(parent, obj){
+
+function fillObj(parent, obj){
     for(const key in obj){
         const value = obj[key]
-
-        if(Array.isArray(value)) 
-            fillArray(key, value)
-        else if (typeof value == "string"){
-            const elem = parent == document.body ? document.getElementById(key) : parent.querySelector("." + key)
-            fillAttr(elem, value)
-        } else
-            fillContent(parent, value)
+        fillItem(parent, key, value)
     }
 }
 
@@ -48,17 +42,30 @@ function fillArray(name, jsonArr){
 
     for(const obj of jsonArr){
         const newElem = template.content.cloneNode(true)
-        if(typeof obj == "string")
-            fillAttr(newElem.firstChild, obj)
-        else
-            fillContent(newElem, obj)
-
+        fillItem(newElem, null, obj)
         parent.appendChild(newElem)
     }
 }
 
+function fillItem(parent, key, value){
+    if (typeof value == "string")
+        fillString(parent, key, value)
+    else if(Array.isArray(value)) 
+        fillArray(key, value)
+    else
+        fillObj(parent, value)
+}
 
-const fillAttr = (elem, value) => elem.textContent = value
+function fillString(parent, key, value){
+    if(parent == document.body) 
+        document.getElementById(key).textContent = value
+    else if(key === null) //string in array
+        parent.firstChild.textContent = value
+    else // elem in obj in array
+        parent.querySelector("." + key).textContent = value
+}
+
+
 
 // ============= RUN =============
 fillContentIfReady()
