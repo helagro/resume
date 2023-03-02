@@ -35,7 +35,6 @@ function renderArray(name, jsonArr){
     for(const obj of jsonArr){
         const newElem = template.content.cloneNode(true)
         renderItem(newElem, null, obj)
-        //console.log(parent.appendChild(newElem))
         newRenderedNodes.push(parent.appendChild(newElem))
     }
 }

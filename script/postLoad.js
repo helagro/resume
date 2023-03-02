@@ -25,7 +25,8 @@ function changeLanguage(){
 
 function clearNewRenderedElems(){
     //console.log("feaiubfeia", document.body)
-    for(const elem of newRenderedNodes){
+    const generatedNodes = document.getElementsByClassName("generated")
+    for(const elem of generatedNodes){
         //console.log("feafea", elem)
         elem.remove()
     }
