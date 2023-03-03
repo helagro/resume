@@ -1,3 +1,7 @@
+const Handlebars = require("handlebars")
+const fs = require("fs")
+
+
 const languages = [
     {
         inputName: "english.json",
@@ -6,17 +10,21 @@ const languages = [
     {
         inputName: "swedish.json",
         outputName: "se.html"
-    }
+    },
 ]
 
 
-const Handlebars = require("handlebars")
-const fs = require("fs")
+for(const language of languages){
+    compileLanguage(language)
+}
 
-const templateSource = fs.readFileSync("index.html", "utf8")
+function compileLanguage(lang){
+    const templateSource = fs.readFileSync("source/template.html", "utf8")
+    const contentStr = fs.readFileSync(`source/${lang.inputName}`, "utf8")
 
-const content = fs.readFileSync("source/english.json", "utf8")
-const template = Handlebars.compile(templateSource)
-const result = template({ name: "Nils" })
-
-fs.writeFileSync("res.html", result)
+    const contentObj = JSON.parse(contentStr)
+    const template = Handlebars.compile(templateSource)
+    const result = template(contentObj)
+    
+    fs.writeFileSync(`public/${lang.outputName}`, result)
+}

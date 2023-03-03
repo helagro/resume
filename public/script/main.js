@@ -23,14 +23,6 @@ function changeLanguage(){
     loadContentFile(language)
 }
 
-function clearNewRenderedElems(){
-    //console.log("feaiubfeia", document.body)
-    const generatedNodes = document.getElementsByClassName("generated")
-    for(const elem of generatedNodes){
-        //console.log("feafea", elem)
-        elem.remove()
-    }
-}
 
 // ============= RUN =============
 loadContactDetails()
