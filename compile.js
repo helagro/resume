@@ -26,5 +26,5 @@ function compileLanguage(lang){
     const template = Handlebars.compile(templateSource)
     const result = template(contentObj)
     
-    fs.writeFileSync(`public/${lang.outputName}`, result)
+    fs.writeFileSync(`docs/${lang.outputName}`, result)
 }
