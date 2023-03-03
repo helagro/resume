@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=se.html">
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <p>If you are not redirected automatically, follow this <a href="se.html">link</a>.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Resume</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="leftColumn">
+                <header class="columns">
+                    <img class="profilePic" id="profilePic" src="img/pexels-jornt-hornstra-12134422.jpg" width="110px" height="110px">
+                    <div class="floor">
+                        <h1>Henrik Lagrosen</h1>
+                        <div class="columns">
+                            <a class="largeInfo" id="email"></a> 
+                            <span class="columnDivider"></span>
+                            <a class="largeInfo" id="phone"></a> 
+                        </div>
+                    </div>
+                </header>
+    
+                <div class="pageContent">
+                    <h2>WORKEXPERIENCE</h2>
+
+                    <div class="infoItem generated">
+                        <h3>Cashier, Ica Stillingsön</h3>
+                        <p class="mainText">Duis eleifend metus est, et bibendum orci bibendum eget. Nunc et eros imperdiet, suscipit dui ut,</p>
+                        <p class="smallInfo">aug 2018 — juni 2019</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="rightColumn">
+                <div class="rightColumnSection">
+                    <h2>COMPETENCIES</h2>
+
+                    <p class="largeInfo">Mobile app development</p>
+                    <p class="largeInfo">Web development</p>
+                </div>
+            </div>
+    
+        </section>    
+    
+        <div class="optionsPanelContainer">
+            <div class="optionsPanel">
+                <h2>Options</h2>
+                <div>
+                    <a href="se.html"><p class="largeInfo">Swedish</p></a>
+                </div>
+                <span>
+                    <label for="showImages"><span class="largeInfo">Show Image</span></label>
+                    <input type="checkbox" name="showImages" id="showImages" autocomplete="off" onchange="showPFP(this.checked)">
+                </span>
+                <button onclick="print()"><p class="largeInfo">Print</p></button>
+            </div>
+        </div>
+
+        <div class="credit">
+            <a target="_blank" href="https://icons8.com/icon/46171/cv">CV</a>
+            icon by 
+            <a target="_blank" href="https://icons8.com">Icons8</a>
+        </div>
+    </main>
+
+    <script src="script/main.js"></script>
+</body>
 </html>

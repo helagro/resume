@@ -5,7 +5,7 @@ const fs = require("fs")
 const languages = [
     {
         inputName: "english.json",
-        outputName: "en.html"
+        outputName: "index.html"
     },
     {
         inputName: "swedish.json",
