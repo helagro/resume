@@ -11,5 +11,9 @@
     "qualification": [
         "Utveckling av Android appar",
         "Webbutveckling"
-    ]
+    ],
+    "otherLanguage": {
+        "name": "English",
+        "file": "en.html"
+    } 
 }

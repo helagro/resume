@@ -52,15 +52,14 @@
         <div class="optionsPanelContainer">
             <div class="optionsPanel">
                 <h2>Options</h2>
+                <div>
+                    <a href="{{otherLanguage.file}}"><p class="largeInfo">{{otherLanguage.name}}</p></a>
+                </div>
                 <span>
                     <label for="showImages"><span class="largeInfo">Show Image</span></label>
                     <input type="checkbox" name="showImages" id="showImages" autocomplete="off" onchange="showPFP(this.checked)">
                 </span>
                 <button onclick="print()"><p class="largeInfo">Print</p></button>
-                <select id="languageSelect" onchange="changeLanguage()" autocomplete="off">
-                    <option selected value="swedish">Svenska</option>
-                    <option value="english">English</option>
-                </select>
             </div>
         </div>
 

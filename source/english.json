@@ -11,5 +11,9 @@
     "qualification": [
         "Mobile app development",
         "Web development"
-    ]
+    ],
+    "otherLanguage": {
+        "name": "Swedish",
+        "file": "se.html"
+    } 
 }

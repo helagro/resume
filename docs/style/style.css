@@ -76,10 +76,6 @@ h3 {
   height: -moz-min-content;
   height: min-content;
 }
-.optionsPanel #languageSelect {
-  display: none;
-}
-
 @media print {
   .optionsPanel {
     display: none;
