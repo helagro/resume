@@ -22,24 +22,24 @@ h3 {
   font-weight: 500;
 }
 
-.mainText {
+.bodyText {
   color: #1b1b1b;
   font-size: 0.9em;
 }
 
-.largeInfo {
+.largeText {
   color: #1b1b1b;
   font-size: 1rem;
   margin: 0.6em 0;
 }
 
-.mediumInfo {
+.mediumText {
   color: #3a3a3a;
   font-size: 0.9em;
   line-height: 0.5em;
 }
 
-.smallInfo {
+.smallText {
   color: #818181;
   line-height: 0.5em;
   font-size: 0.8em;
@@ -125,7 +125,7 @@ header .floor {
 header .columns {
   margin-left: 0.42em;
 }
-header .mediumInfo {
+header .mediumText {
   margin-left: 0.9em;
 }
 

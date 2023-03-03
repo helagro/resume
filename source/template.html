@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <title>Resume</title>
+    <title>{{pageTitle}}</title>
 </head>
 <body>
     <main>
@@ -17,9 +17,9 @@
                     <div class="floor">
                         <h1>Henrik Lagrosen</h1>
                         <div class="columns">
-                            <a class="largeInfo" id="email"></a> 
+                            <a class="largeText" id="email"></a> 
                             <span class="columnDivider"></span>
-                            <a class="largeInfo" id="phone"></a> 
+                            <a class="largeText" id="phone"></a> 
                         </div>
                     </div>
                 </header>
@@ -30,8 +30,8 @@
                     {{#each workExperienceItem}}
                     <div class="infoItem generated">
                         <h3>{{this.title}}</h3>
-                        <p class="mainText">{{this.text}}</p>
-                        <p class="smallInfo">{{this.time}}</p>
+                        <p class="bodyText">{{this.text}}</p>
+                        <p class="smallText">{{this.time}}</p>
                     </div>
                     {{/each}}  
                 </div>
@@ -42,7 +42,7 @@
                     <h2>{{qualifications}}</h2>
 
                     {{#each qualification}}
-                    <p class="largeInfo">{{this}}</p>
+                    <p class="largeText">{{this}}</p>
                     {{/each}}
                 </div>
             </div>
@@ -53,13 +53,13 @@
             <div class="optionsPanel">
                 <h2>Options</h2>
                 <div>
-                    <a href="{{otherLanguage.file}}"><p class="largeInfo">{{otherLanguage.name}}</p></a>
+                    <a href="{{otherLanguage.file}}"><p class="largeText">{{otherLanguage.name}}</p></a>
                 </div>
                 <span>
-                    <label for="showImages"><span class="largeInfo">Show Image</span></label>
+                    <label for="showImages"><span class="largeText">Show Image</span></label>
                     <input type="checkbox" name="showImages" id="showImages" autocomplete="off" onchange="showPFP(this.checked)">
                 </span>
-                <button onclick="print()"><p class="largeInfo">Print</p></button>
+                <button onclick="print()"><p class="largeText">Print</p></button>
             </div>
         </div>
 
