@@ -2,10 +2,10 @@
     
 section
     z-index: 2
-    max-width: 21cm
+    max-width: 210mm
     width: 100vw
     box-sizing: border-box
-    min-height: 29.7cm
+    min-height: 297mm
     margin: 1em 0
     padding: 2em 1em 3em 3.8em
     background-color: var.$page-color
@@ -23,20 +23,6 @@ section
         margin-top: 0
 
 
-header
-    margin-bottom: 2em
-
-    .floor
-        margin-bottom: 0.5em
-        height: min-content
-        margin-top: auto
-
-    .columns
-        margin-left: var.$std-indent * 0.7
-
-    .mediumText
-        margin-left: var.$std-indent *1.5
-
 .pageContent
     margin-left: var.$std-indent *0.2
     margin-top: 1em
@@ -47,35 +33,18 @@ header
     margin-bottom: 2.5em
     margin-top: 1.5em
 
-.profilePic
-    border-radius: 50%  
-    margin-left: auto
-    margin-right: auto
-    object-fit: cover
 
-    @media (max-width: 30em)
-        display: none !important
-
-.columns
-    display: grid
-    grid-auto-columns: max-content
-    grid-auto-flow: column
-    column-gap: 5%
-
-.columnDivider 
-    border-right: 0.1em solid var.$light-gray
-    height: 50%
-    margin-top: 0.7em 
 
 
 // ========== SIDE CONTENT ===========
 
-.rightColumnSection
-    margin-top: 1em
+.rightColumn
+    div
+        margin-top: 1em
 
-    h2
-        color: var.$medium-gray
-
-    @media (max-width: var.$split-to-rows-size)
         h2
-            color: var.$light-gray
+            color: var.$medium-gray
+
+        @media (max-width: var.$split-to-rows-size)
+            h2
+                color: var.$light-gray

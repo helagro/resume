@@ -2,6 +2,9 @@
 @use "_text"
 @use "_options"
 @use "_content"
+@use "_header"
+@use "_print"
+@use "_other"
     
 *
     font-family: "EB Garamond"
@@ -13,7 +16,6 @@ body
     height: 100vh
     background-color: var.$behind-page-color
 
-
 main
     display: grid
     grid-template-columns: auto max-content
@@ -21,7 +23,6 @@ main
     max-width: max-content
     column-gap: 0.8em
     padding-bottom: 2em
-
 
 label
     user-select: none
@@ -36,47 +37,3 @@ img
 
 input[type="checkbox"]
     accent-color: var.$strong-color
-
-
-.credit
-    position: fixed
-    left: 50%
-    margin-left: 6cm
-    bottom: 1em
-    display: block
-    width: max-content
-
-    *
-        position: relative
-
-    a
-        color: var.$strong-color
-
-    @media screen and (max-width: 21cm)
-        margin-left: 0
-        right: 10%
-        left: unset
-
-// ============= PRINT ==============
-
-@page
-    margin: 0
-    margin-right: 3em
-
-@media print
-    .infoItem
-        page-break-inside: avoid
-
-    section
-        box-shadow: none
-        height: auto
-        min-height: auto
-        width: 100%
-        max-width: 100%
-
-    main
-        margin: 0
-        max-width: none
-
-    .credit
-        display: none

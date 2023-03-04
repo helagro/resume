@@ -153,20 +153,6 @@ header .mediumText {
   }
 }
 
-.columns {
-  display: grid;
-  grid-auto-columns: max-content;
-  grid-auto-flow: column;
-  -moz-column-gap: 5%;
-       column-gap: 5%;
-}
-
-.columnDivider {
-  border-right: 0.1em solid #818181;
-  height: 50%;
-  margin-top: 0.7em;
-}
-
 .rightColumnSection {
   margin-top: 1em;
 }
@@ -220,6 +206,20 @@ img {
 
 input[type=checkbox] {
   accent-color: #2196F3;
+}
+
+.columns {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+
+.columnDivider {
+  border-right: 0.1em solid #818181;
+  height: 50%;
+  margin-top: 0.7em;
 }
 
 .credit {
