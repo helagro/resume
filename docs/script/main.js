@@ -15,9 +15,19 @@ function loadContactDetails(){
 const showPFP = (value) => document.getElementById("profilePic").style.display = value ? "unset" : "none"
 
 
+
+// ============ MOBILE OPTIONS ===============
+
 let popupIsShowing = false
+
+
 const toggleOptionsPopup = () => showOptionsPopup(!popupIsShowing)
 
+function handleOutsideTouch(event){
+    if (event.target.tagName === 'BUTTON' || event.target.id === "toggleOptionsBtnImg") return
+
+    showOptionsPopup(false)
+}
 
 function showOptionsPopup(doShow){
     if(popupIsShowing == doShow) return
@@ -35,7 +45,7 @@ function rotateToggleOptionsPopupBtn(popupIsShowing){
 
     const rotate = () => {
         rotation += 20
-        img.style.transform = "rotate(" + rotation + "deg)"
+        img.style.transform = `rotate(${rotation}deg)`
 
         if(rotation % 180 != 0)
             requestAnimationFrame(rotate)
@@ -44,14 +54,10 @@ function rotateToggleOptionsPopupBtn(popupIsShowing){
     rotate()
 }
 
+
+
+// ============= ENTRY POINTS =============
+loadContactDetails()
+
 document.addEventListener('mousedown', handleOutsideTouch)
 document.addEventListener('touchstart', handleOutsideTouch)
-
-function handleOutsideTouch(event){
-    if (event.target.tagName === 'BUTTON' || event.target.id === "toggleOptionsBtnImg") return
-
-    showOptionsPopup(false)
-}
-
-// ============= RUN =============
-loadContactDetails()
