@@ -234,7 +234,7 @@ header .mediumText {
     display: none;
   }
 }
-.credit {
+.credits {
   position: fixed;
   left: 50%;
   margin-left: 3cm;
@@ -243,18 +243,19 @@ header .mediumText {
   width: -moz-max-content;
   width: max-content;
 }
+@media screen and (max-width: 21cm) {
+  .credits {
+    margin-left: 0;
+    right: 10%;
+    left: unset;
+  }
+}
+
 .credit * {
   position: relative;
 }
 .credit a {
   color: #2196F3;
-}
-@media screen and (max-width: 21cm) {
-  .credit {
-    margin-left: 0;
-    right: 10%;
-    left: unset;
-  }
 }
 
 * {
@@ -276,7 +277,7 @@ main {
   max-width: max-content;
   -moz-column-gap: 0.8em;
        column-gap: 0.8em;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
 }
 
 label {
