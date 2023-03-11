@@ -16,18 +16,17 @@ const showPFP = (value) => document.getElementById("profilePic").style.display =
 
 
 let popupIsShowing = false
-function toggleOptionsPopup(){
-    popupIsShowing = !popupIsShowing
-    showOptionsPopup(popupIsShowing)
-}
+const toggleOptionsPopup = () => showOptionsPopup(!popupIsShowing)
+
 
 function showOptionsPopup(doShow){
-    if(showOptionsPopup == doShow) return
+    if(popupIsShowing == doShow) return
+    popupIsShowing = doShow
 
     rotateToggleOptionsPopupBtn(popupIsShowing)
 
     const optionsContent = document.getElementById("optionsContent")
-    optionsContent.style.display = showOptionsPopup ? "grid" : "none"
+    optionsContent.style.display = popupIsShowing ? "grid" : "none"
 }
 
 function rotateToggleOptionsPopupBtn(popupIsShowing){
@@ -45,8 +44,14 @@ function rotateToggleOptionsPopupBtn(popupIsShowing){
     rotate()
 }
 
-document.addEventListener('mousedown', () => showOptionsPopup(false))
-document.addEventListener('touchstart', () => showOptionsPopup(false))
+document.addEventListener('mousedown', handleOutsideTouch)
+document.addEventListener('touchstart', handleOutsideTouch)
+
+function handleOutsideTouch(event){
+    if (event.target.tagName === 'BUTTON' || event.target.id === "toggleOptionsBtnImg") return
+
+    showOptionsPopup(false)
+}
 
 // ============= RUN =============
 loadContactDetails()
