@@ -15,17 +15,23 @@ function loadContactDetails(){
 const showPFP = (value) => document.getElementById("profilePic").style.display = value ? "unset" : "none"
 
 
-let showOptionsPopup = false
+let popupIsShowing = false
 function toggleOptionsPopup(){
-    showOptionsPopup = !showOptionsPopup
-    rotateToggleOptionsPopupBtn(showOptionsPopup)
+    popupIsShowing = !popupIsShowing
+    showOptionsPopup(popupIsShowing)
+}
+
+function showOptionsPopup(doShow){
+    if(showOptionsPopup == doShow) return
+
+    rotateToggleOptionsPopupBtn(popupIsShowing)
 
     const optionsContent = document.getElementById("optionsContent")
     optionsContent.style.display = showOptionsPopup ? "grid" : "none"
 }
 
-function rotateToggleOptionsPopupBtn(showOptionsPopup){
-    let rotation = showOptionsPopup ? 0 : 180
+function rotateToggleOptionsPopupBtn(popupIsShowing){
+    let rotation = popupIsShowing ? 0 : 180
     const img = document.getElementById("toggleOptionsBtnImg")
 
     const rotate = () => {
@@ -38,6 +44,9 @@ function rotateToggleOptionsPopupBtn(showOptionsPopup){
 
     rotate()
 }
+
+document.addEventListener('mousedown', () => showOptionsPopup(false))
+document.addEventListener('touchstart', () => showOptionsPopup(false))
 
 // ============= RUN =============
 loadContactDetails()
