@@ -17,28 +17,27 @@ const showPFP = (value) => document.getElementById("profilePic").style.display =
 
 let showOptionsPopup = false
 function toggleOptionsPopup(){
-    rotateToggleOptionsPopupBtn()
     showOptionsPopup = !showOptionsPopup
+    rotateToggleOptionsPopupBtn(showOptionsPopup)
 
     const optionsContent = document.getElementById("optionsContent")
     optionsContent.style.display = showOptionsPopup ? "grid" : "none"
 }
 
-function rotateToggleOptionsPopupBtn(){
+function rotateToggleOptionsPopupBtn(showOptionsPopup){
+    let rotation = showOptionsPopup ? 0 : 180
     const img = document.getElementById("toggleOptionsBtnImg")
-    let rotation = 0
 
     const rotate = () => {
-        img.style.transform = "rotate(" + rotation + "deg)"
         rotation += 20
+        img.style.transform = "rotate(" + rotation + "deg)"
 
-        if(rotation <= 180)
+        if(rotation % 180 != 0)
             requestAnimationFrame(rotate)
     }
 
     rotate()
 }
-
 
 // ============= RUN =============
 loadContactDetails()
