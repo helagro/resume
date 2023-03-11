@@ -1,14 +1,11 @@
 @use "var"
 
-.optionsPanelContainer
-    z-index: 4
-
 
 .optionsPanel
     padding: 0.2em 2em 2em 1em
-    height: 5em
+    height: min-content
     margin-top: 3em
-    display: grid
+    grid-template-columns: auto
     border-radius: 0.2em
     display: none
 
@@ -31,8 +28,11 @@
 
 
 #toggleOptionsBtn
+    background-color: var.$options-background
+    border: none
+    padding: 0.7em
     position: fixed
-    right: 0.3em
+    right: 0em
     top: 4em
     z-index: 5
 
@@ -47,9 +47,13 @@
         position: fixed
         right: 0
         width: 10em
+        z-index: 4
 
     .optionsPanel
-        background-color: var.$behind-page-color
+        background-color: var.$options-background
+        z-index: 4
+        padding: 1.6em
+        box-shadow: 0.05em 0.05em 0.2em var.$shadow-color
 
 
 @media screen and (min-width: var.$hide-options-menu-screen-width)
@@ -57,7 +61,7 @@
         position: relative
 
     .optionsPanel
-        display: unset !important
+        display: grid !important
 
     #toggleOptionsBtn
         display: none

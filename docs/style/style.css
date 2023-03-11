@@ -45,15 +45,12 @@ h3 {
   font-size: 0.8em;
 }
 
-.optionsPanelContainer {
-  z-index: 4;
-}
-
 .optionsPanel {
   padding: 0.2em 2em 2em 1em;
-  height: 5em;
+  height: -moz-min-content;
+  height: min-content;
   margin-top: 3em;
-  display: grid;
+  grid-template-columns: auto;
   border-radius: 0.2em;
   display: none;
 }
@@ -78,8 +75,11 @@ h3 {
 }
 
 #toggleOptionsBtn {
+  background-color: #e3e3e3;
+  border: none;
+  padding: 0.7em;
   position: fixed;
-  right: 0.3em;
+  right: 0em;
   top: 4em;
   z-index: 5;
 }
@@ -94,9 +94,13 @@ h3 {
     position: fixed;
     right: 0;
     width: 10em;
+    z-index: 4;
   }
   .optionsPanel {
-    background-color: #f0f0f0;
+    background-color: #e3e3e3;
+    z-index: 4;
+    padding: 1.6em;
+    box-shadow: 0.05em 0.05em 0.2em #bdbdbd;
   }
 }
 @media screen and (min-width: 30cm) {
@@ -104,7 +108,7 @@ h3 {
     position: relative;
   }
   .optionsPanel {
-    display: unset !important;
+    display: grid !important;
   }
   #toggleOptionsBtn {
     display: none;
@@ -140,6 +144,10 @@ section {
 .pageContent {
   margin-left: 0.12em;
   margin-top: 1em;
+}
+
+.profilePic {
+  display: none;
 }
 
 .infoItem {
@@ -229,7 +237,7 @@ header .mediumText {
 .credit {
   position: fixed;
   left: 50%;
-  margin-left: 6cm;
+  margin-left: 3cm;
   bottom: 1em;
   display: block;
   width: -moz-max-content;
@@ -282,10 +290,6 @@ a {
 }
 a:hover {
   text-decoration: underline;
-}
-
-img {
-  display: none;
 }
 
 input[type=checkbox] {

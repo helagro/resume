@@ -47,16 +47,18 @@
         </section>    
     
         <div class="optionsPanelContainer">
-            <button onclick="showOptions()" id="toggleOptionsBtn">fea</button>
+            <button onclick="toggleOptionsPopup()" id="toggleOptionsBtn">
+                <img src="img/icons8-double-left-30.png" width="20px" height="20px" id="toggleOptionsBtnImg">
+            </button>
             <div class="optionsPanel" id="optionsContent">
                 <h2>Options</h2>
                 <div>
                     <a href="se.html"><p class="largeText">Swedish</p></a>
                 </div>
-                <span>
+                <p>
                     <label for="showImages"><span class="largeText">Show Image</span></label>
                     <input type="checkbox" name="showImages" id="showImages" autocomplete="off" onchange="showPFP(this.checked)">
-                </span>
+                </p>
                 <button onclick="print()"><p class="largeText">Print</p></button>
             </div>
         </div>
