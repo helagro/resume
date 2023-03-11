@@ -15,5 +15,12 @@ function loadContactDetails(){
 const showPFP = (value) => document.getElementById("profilePic").style.display = value ? "unset" : "none"
 
 
+const optionsContent = document.getElementById("optionsContent")
+function showOptions(){
+    console.log(optionsContent.style)
+    optionsContent.style.display = optionsContent.style.display == "none" ? "unset" : "none"
+}
+
+
 // ============= RUN =============
 loadContactDetails()

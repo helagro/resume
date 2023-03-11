@@ -1,7 +1,10 @@
 @use "var"
 
 .optionsPanelContainer
-    position: relative
+    position: fixed
+    z-index: 4
+    right: 0
+    width: 10em
 
 .optionsPanel
     padding: 0.2em 2em 2em 1em
@@ -10,6 +13,7 @@
     display: grid
     border-radius: 0.2em
     position: fixed
+    display: none
 
     *
         margin-top: 0.1em
@@ -28,14 +32,23 @@
         width: max-content
         height: min-content
 
-    #languageSelect
-        //display: none //tmp
+
+#toggleOptionsBtn
+    position: fixed
+    right: 0.3em
+    top: 4em
 
 
 @media print
-    .optionsPanel
+    .optionsPanelContainer
         display: none
 
-@media screen and (max-width: 30cm)
+@media screen and (min-width: 30cm)
+    .optionsPanelContainer
+        position: relative
+
     .optionsPanel
+        display: unset !important
+
+    #toggleOptionsBtn
         display: none
