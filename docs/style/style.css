@@ -46,10 +46,7 @@ h3 {
 }
 
 .optionsPanelContainer {
-  position: fixed;
   z-index: 4;
-  right: 0;
-  width: 10em;
 }
 
 .optionsPanel {
@@ -58,7 +55,6 @@ h3 {
   margin-top: 3em;
   display: grid;
   border-radius: 0.2em;
-  position: fixed;
   display: none;
 }
 .optionsPanel * {
@@ -85,11 +81,22 @@ h3 {
   position: fixed;
   right: 0.3em;
   top: 4em;
+  z-index: 5;
 }
 
 @media print {
   .optionsPanelContainer {
     display: none;
+  }
+}
+@media screen and (max-width: 30cm) {
+  .optionsPanelContainer {
+    position: fixed;
+    right: 0;
+    width: 10em;
+  }
+  .optionsPanel {
+    background-color: #f0f0f0;
   }
 }
 @media screen and (min-width: 30cm) {

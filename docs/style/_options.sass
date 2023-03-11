@@ -1,10 +1,8 @@
 @use "var"
 
 .optionsPanelContainer
-    position: fixed
     z-index: 4
-    right: 0
-    width: 10em
+
 
 .optionsPanel
     padding: 0.2em 2em 2em 1em
@@ -12,7 +10,6 @@
     margin-top: 3em
     display: grid
     border-radius: 0.2em
-    position: fixed
     display: none
 
     *
@@ -37,13 +34,25 @@
     position: fixed
     right: 0.3em
     top: 4em
+    z-index: 5
 
 
 @media print
     .optionsPanelContainer
         display: none
 
-@media screen and (min-width: 30cm)
+
+@media screen and (max-width: var.$hide-options-menu-screen-width)
+    .optionsPanelContainer
+        position: fixed
+        right: 0
+        width: 10em
+
+    .optionsPanel
+        background-color: var.$behind-page-color
+
+
+@media screen and (min-width: var.$hide-options-menu-screen-width)
     .optionsPanelContainer
         position: relative
 
