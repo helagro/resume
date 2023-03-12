@@ -26,6 +26,7 @@ const toggleOptionsPopup = () => showOptionsPopup(!popupIsShowing)
 function handleOutsideTouch(event){
     if (event.target.tagName === 'BUTTON' || event.target.id === "toggleOptionsBtnImg") return
 
+    console.log("feiuab" + event.target.tagName)
     showOptionsPopup(false)
 }
 
