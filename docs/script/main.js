@@ -41,18 +41,9 @@ function showOptionsPopup(doShow){
 }
 
 function rotateToggleOptionsPopupBtn(popupIsShowing){
-    let rotation = popupIsShowing ? 0 : 180
+    let rotation = popupIsShowing ? 180 : 0
     const img = document.getElementById("toggleOptionsBtnImg")
-
-    const rotate = () => {
-        rotation += 20
-        img.style.transform = `rotate(${rotation}deg)`
-
-        if(rotation % 180 != 0)
-            requestAnimationFrame(rotate)
-    }
-
-    rotate()
+    img.style.transform = `rotate(${rotation}deg)`
 }
 
 
