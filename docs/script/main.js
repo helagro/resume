@@ -24,9 +24,9 @@ let popupIsShowing = false
 const toggleOptionsPopup = () => showOptionsPopup(!popupIsShowing)
 
 function handleOutsideTouch(event){
-    if (event.target.tagName === 'BUTTON' || event.target.id === "toggleOptionsBtnImg") return
+    //exit if the click was within the popup or on the toggle button
+    if(event.target.closest("#optionsContent") || event.target.closest("#toggleOptionsBtn")) return
 
-    console.log("feiuab" + event.target.tagName)
     showOptionsPopup(false)
 }
 

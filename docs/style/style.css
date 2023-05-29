@@ -140,6 +140,11 @@ section {
     margin-top: 0;
   }
 }
+@media screen and (max-width: 220mm) {
+  section {
+    padding-right: 40px;
+  }
+}
 
 .pageContent {
   margin-left: 0.12em;
