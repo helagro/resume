@@ -1,48 +1,46 @@
 @use "var"
-    
+
+//Every section is displayed as a page
 section
     z-index: 2
-    max-width: 210mm
+    max-width: var.$page-width
     width: 100vw
     box-sizing: border-box
-    min-height: 297mm
+    min-height: var.$page-height
     margin: 1em 0
-    padding: 2em 1em 3em 3.8em
+    padding: 2em 1.3em 3em 3.8em
     background-color: var.$page-color
     display: grid
     grid-template-columns: var.$page-grid-division
     grid-template-rows: max-content max-content
     box-shadow: 0.1em 0.1em 0.5em var.$shadow-color
 
-    @media (max-width: var.$split-to-rows-size)
+    //Makes the sidebar become a row on mobile
+    @media (max-width: var.$sidebar-to-row-size)
         grid-template-columns: auto
         padding-right: 2em
-    
+
+    //Less padding on small mobile
     @media (max-width: 30em)
         padding: 1em
         margin-top: 0
 
-
+    //Gives space for the options menu button
     @media screen and (max-width: 220mm)
         padding-right: 40px
-
 
 .pageContent
     margin-left: var.$std-indent *0.2
     margin-top: 1em
 
-
 .profilePic
+    //Hide initially
     display: none
-
 
 .infoItem
     padding-left: var.$std-indent
     margin-bottom: 2.5em
     margin-top: 1.5em
-
-
-
 
 // ========== SIDE CONTENT ===========
 
@@ -53,6 +51,6 @@ section
         h2
             color: var.$medium-gray
 
-        @media (max-width: var.$split-to-rows-size)
+        @media (max-width: var.$sidebar-to-row-size)
             h2
                 color: var.$light-gray

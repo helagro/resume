@@ -1,7 +1,7 @@
 h1 {
   color: #2196F3;
   font-size: 2.2em;
-  margin-top: 0;
+  margin-top: 0.4em;
   margin-bottom: 0.1em;
   letter-spacing: 0.06em;
   font-weight: 500;
@@ -121,7 +121,7 @@ section {
   box-sizing: border-box;
   min-height: 297mm;
   margin: 1em 0;
-  padding: 2em 1em 3em 3.8em;
+  padding: 2em 1.3em 3em 3.8em;
   background-color: #fff;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -218,7 +218,7 @@ header .mediumText {
 
 @page {
   margin: 0;
-  margin-right: 3em;
+  margin-right: 2em;
 }
 @media print {
   .infoItem {

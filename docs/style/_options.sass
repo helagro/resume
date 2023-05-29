@@ -1,6 +1,5 @@
 @use "var"
 
-
 .optionsPanel
     padding: 0.2em 2em 2em 1em
     height: min-content
@@ -26,7 +25,6 @@
         width: max-content
         height: min-content
 
-
 #toggleOptionsBtn
     background-color: var.$options-background
     border: none
@@ -36,13 +34,12 @@
     top: 4em
     z-index: 5
 
-
 @media print
     .optionsPanelContainer
         display: none
 
-
-@media screen and (max-width: var.$hide-options-menu-screen-width)
+//Display options menu on mobile
+@media screen and (max-width: var.$options-media-screen-width)
     .optionsPanelContainer
         position: fixed
         right: 0
@@ -55,8 +52,8 @@
         padding: 1.6em
         box-shadow: 0.05em 0.05em 0.2em var.$shadow-color
 
-
-@media screen and (min-width: var.$hide-options-menu-screen-width)
+//Display options menu on computer
+@media screen and (min-width: var.$options-media-screen-width)
     .optionsPanelContainer
         position: relative
 
