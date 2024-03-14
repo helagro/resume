@@ -60,15 +60,28 @@
             </section>
 
             <section>
-                <div class="pageContent">
-                    <h2>{{education}}</h2>
-                    {{#each educationItem}}
-                    <div class="infoItem">
-                        <h3>{{this.title}}</h3>
-                        <p class="bodyText">{{this.text}}</p>
-                        <p class="smallText">{{this.time}}</p>
+                <div class="leftColumn">
+                    <div class="pageContent">
+                        <h2>{{education}}</h2>
+                        {{#each educationItem}}
+                        <div class="infoItem">
+                            <h3>{{this.title}}</h3>
+                            <p class="bodyText">{{this.text}}</p>
+                            <p class="smallText">{{this.time}}</p>
+                        </div>
+                        {{/each}}
                     </div>
-                    {{/each}}
+
+                    <div class="pageContent">
+                        <h2>{{internship}}</h2>
+                        {{#each internshipItem}}
+                        <div class="infoItem">
+                            <h3>{{this.title}}</h3>
+                            <p class="bodyText">{{this.text}}</p>
+                            <p class="smallText">{{this.time}}</p>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </section>
         </div>
@@ -108,7 +121,6 @@
             <a target="_blank" href="https://icons8.com/icon/100948/double-left">Double Left</a>
             icon by
             <a target="_blank" href="https://icons8.com">Icons8</a>
-        </div>
         </div>
 
     </footer>

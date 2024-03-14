@@ -57,6 +57,14 @@
         "Utveckling av Android appar",
         "Webbutveckling"
     ],
+    "internship": "PRAKTIKPLATSER",
+    "internshipItem": [
+        {
+            "title": "Varuplockare, Ica Stillingsön",
+            "text": "Hjälpte till med allmänna sysslor i affären, främst genom att packa upp och plocka varor.",
+            "time": "2017 — mars 2017, Orust"
+        }
+    ],
     "otherLanguage": {
         "name": "English",
         "file": "index.html"
