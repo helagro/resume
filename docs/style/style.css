@@ -126,6 +126,8 @@ section {
   background-color: #fff;
   position: relative;
   display: grid;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: max-content max-content;
   box-shadow: 0.1em 0.1em 0.5em #bdbdbd;
