@@ -1,11 +1,55 @@
 {
     "pageTitle": "CV",
+    "profile": "PROFIL",
+    "profileText": "Bred erfarenhet av affärsarbete samt erfarenhet som laboratorieassistent och fritidsassistent. Studerat datavetenskap, programmering och medieredigering.",
     "workExperience": "ARBETSLIVSERFARENHET",
     "workExperienceItem": [
         {
+            "title": "Laboratorieassistent, ALS Danderyd",
+            "text": "Arbetsuppgifterna innefattade bland annat invägning av jordprover, uttömmning av provvialer och diskning av olika typer av behållare. Jag hade även ett extra ansvar som IT support, där uppgifterna rörde sig mycket kring installation och felsökning av mjukvara, datorer samt enheter kopplade till dem. Ett annat större ansvarsområde var hantering av nyckelbrickor.",
+            "time": "april 2022 — augusti 2022, Danderyd"
+        },
+        {
             "title": "Butiksbiträde, Ica Stillingsön",
-            "text": "Duis eleifend metus est, et bibendum orci bibendum eget. Nunc et eros imperdiet, suscipit dui ut,",
-            "time": "aug 2018 — juni 2019"
+            "text": "Kassatjänst i en ICA-affär, mestadels i en specialavdelning där framförallt trädgårdsprodukter, leksaker och produkter för hemmafixare såldes. Jag hanterade även påfyllning av varor, städning och rensning av ogräs.",
+            "time": "juni 2020 — juli 2020, Orust"
+        },
+        {
+            "title": "Butiksbiträde, Ica Stillingsön",
+            "text": "Samma som ovan.",
+            "time": "juni 2019 — juli 2019, Orust"
+        },
+        {
+            "title": "Fritidsassistent, Orust Kommun",
+            "text": "Deltog i fritidshemmets pedagogiska verksamhet.",
+            "time": "juni 2018 — juli 2018, Ellös"
+        },
+        {
+            "title": "Bokförsäljare på bokmässa, Syneidos Kvalitetsliteratur AB",
+            "text": "Inredde montern och sålde böcker.",
+            "time": "sep 2012 — sep 2012, Göteborg"
+        }
+    ],
+    "education": "UTBILDNING",
+    "educationItem": [
+        {
+            "title": "Chalmers Tekniska Högskola",
+            "text": "Informationsteknik",
+            "time": "2021 — 2021, Göteborg"
+        },
+        {
+            "title": "Fria Läroverken",
+            "text": "Teknik, Informations- och mediainriktning",
+            "time": "aug 2019 — juni 2021, Kalmar"
+        },
+        {
+            "title": "Jensen Gymnasieskola",
+            "text": "Teknik, informationsinriktning",
+            "time": "aug 2018 — juni 2019, Göteborg"
+        },
+        {
+            "title": "Orust Waldorfskola",
+            "time": "aug 2009 — juni 2018, Orust"
         }
     ],
     "qualifications": "KOMPETENS",

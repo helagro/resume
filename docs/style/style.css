@@ -53,6 +53,7 @@ h3 {
   grid-template-columns: auto;
   border-radius: 0.2em;
   display: none;
+  position: fixed;
 }
 .optionsPanel * {
   margin-top: 0.1em;
@@ -123,6 +124,7 @@ section {
   margin: 1em 0;
   padding: 2em 1.3em 3em 3.8em;
   background-color: #fff;
+  position: relative;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: max-content max-content;
@@ -239,17 +241,18 @@ header .mediumText {
     display: none;
   }
 }
-.credits {
+footer {
   position: fixed;
   left: 50%;
   margin-left: 3cm;
+  z-index: 1;
   bottom: 1em;
   display: block;
   width: -moz-max-content;
   width: max-content;
 }
 @media screen and (max-width: 21cm) {
-  .credits {
+  footer {
     margin-left: 0;
     right: 10%;
     left: unset;
