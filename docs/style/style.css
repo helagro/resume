@@ -120,9 +120,7 @@ section {
   max-width: 210mm;
   width: 100vw;
   box-sizing: border-box;
-  height: 297mm;
-  max-height: 297mm;
-  overflow: scroll;
+  min-height: 297mm;
   margin: 1em 0;
   padding: 2em 1.3em 3em 3.8em;
   background-color: #fff;
