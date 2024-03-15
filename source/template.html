@@ -13,11 +13,14 @@
 <body>
     <main>
         <div class="pages">
+
+            <!-- ---------------------- PAGE ONE ----------------------- -->
+
             <section>
                 <div class="leftColumn">
                     <header class="columns">
-                        <img class="profilePic" id="profilePic" src="img/pexels-jornt-hornstra-12134422.jpg"
-                            width="110px" height="110px">
+                        <img class="profilePic" id="profilePic" src="img/me.jpg"
+                            alt="Profile picture of Henrik Lagrosen" width="110px" height="110px">
                         <div class="floor">
                             <h1>Henrik Lagrosen</h1>
                             <div class="columns">
@@ -77,6 +80,8 @@
 
             </section>
 
+            <!-- ---------------------- PAGE TWO ----------------------- -->
+
             <section>
                 <div class="leftColumn">
                     <div class="pageContent">
@@ -101,12 +106,23 @@
                         {{/each}}
                     </div>
                 </div>
+
+                <div class="rightColumn">
+                    <div>
+                        <h2>{{techniques}}</h2>
+
+                        {{#each techniqueItem}}
+                        <p class="largeText">{{this}}</p>
+                        {{/each}}
+                    </div>
+                </div>
             </section>
         </div>
 
         <div class="optionsPanelContainer">
             <button onclick="toggleOptionsPopup()" id="toggleOptionsBtn">
-                <img src="img/icons8-double-left-30.png" width="20px" height="20px" id="toggleOptionsBtnImg">
+                <img src="img/icons8-double-left-30.png" width="20px" height="20px" id="toggleOptionsBtnImg"
+                    alt="Toggle small menu icon">
             </button>
             <div class="optionsPanel" id="optionsContent">
                 <h2>Options</h2>

@@ -1,20 +1,105 @@
 {
-    "pageTitle": "Resume",
+    "pageTitle": "Rèsumè",
+    "profile": "PROFILE",
+    "profileText": "I have extensive experience in IT support as an IT technician at Amplius Field Service Group AB and as a laboratory assistant at ALS Danderyd. Additionally, I have worked in retail. Currently, I am studying Software Engineering and Management at the University of Gothenburg.",
     "workExperience": "WORK EXPERIENCE",
     "workExperienceItem": [
         {
-            "title": "Cashier, Ica Stillingsön",
-            "text": "Duis eleifend metus est, et bibendum orci bibendum eget. Nunc et eros imperdiet, suscipit dui ut,",
-            "time": "aug 2018 — juni 2019"
+            "title": "IT Technician, Amplius Field Service Group AB",
+            "text": "As an IT technician, I was responsible for providing technical support and service to various clients. My role involved extensive fieldwork where I handled and resolved a variety of equipment, including Cisco devices, POS devices, and computers.",
+            "time": "August 2022 — Present"
+        },
+        {
+            "title": "Laboratory Assistant, ALS Danderyd",
+            "text": "Responsibilities included weighing soil samples, emptying sample vials, and washing various types of containers. I also had an additional responsibility as IT support, which involved tasks primarily related to the installation and troubleshooting of software, computers, and connected devices. Another major responsibility was key fob management.",
+            "time": "April 2022 — August 2022, Danderyd"
+        },
+        {
+            "title": "Shop Assistant, Ica Stillingsön",
+            "text": "Cashier service in an ICA store, mostly in a special department where garden products, toys, and home improvement products were sold. I also handled restocking of goods, cleaning, and weeding.",
+            "time": "June 2020 — July 2020, Orust"
+        },
+        {
+            "title": "Shop Assistant, Ica Stillingsön",
+            "text": "Same as above.",
+            "time": "June 2019 — July 2019, Orust"
+        },
+        {
+            "title": "Leisure Assistant, Orust Municipality",
+            "text": "Participated in the educational activities of the leisure center.",
+            "time": "June 2018 — July 2018, Ellös"
         }
     ],
-    "qualifications": "COMPETENCIES",
+    "education": "EDUCATION",
+    "educationItem": [
+        {
+            "title": "University of Gothenburg",
+            "text": "Software Engineering and Management",
+            "time": "2022 — Present, Gothenburg"
+        },
+        {
+            "title": "Chalmers University of Technology",
+            "text": "Information Technology",
+            "time": "2021 — 2021, Gothenburg"
+        },
+        {
+            "title": "Fria Läroverken",
+            "text": "Technology, Information and Media",
+            "time": "August 2019 — June 2021, Kalmar"
+        },
+        {
+            "title": "Jensen Gymnasieskola",
+            "text": "Technology, Information",
+            "time": "August 2018 — June 2019, Gothenburg"
+        },
+        {
+            "title": "Orust Waldorfskola",
+            "time": "August 2009 — June 2018, Orust"
+        }
+    ],
+    "qualifications": "QUALIFICATIONS",
     "qualification": [
-        "Mobile app development",
-        "Web development"
+        "Programming",
+        "Web design",
+        "Android development",
+        "Computer literate",
+        "Cisco experience",
+        "Fluent in English",
+        "Experience in image and video editing",
+        "Proficient in Excel"
+    ],
+    "hobbies": "HOBBIES",
+    "hobbyItem": [
+        "Strength training",
+        "Literature",
+        "Tennis"
+    ],
+    "internship": "INTERNSHIPS",
+    "internshipItem": [
+        {
+            "title": "Picker, Ica Stillingsön",
+            "text": "Assisted with general tasks in the store, primarily by unpacking and picking goods.",
+            "time": "2017 — March 2017, Orust"
+        }
+    ],
+    "techniques": "TECHNIQUES",
+    "techniqueItem": [
+        "Flutter",
+        "Typescript",
+        "JavaScript",
+        "HTML & CSS",
+        "Vue",
+        "C",
+        "Postman",
+        "Java & Kotlin",
+        "Android",
+        "SQL",
+        "Bootstrap",
+        "MongoDB",
+        "Python"
     ],
     "otherLanguage": {
-        "name": "Swedish",
+        "name": "Svenska",
         "file": "se.html"
     } 
 }

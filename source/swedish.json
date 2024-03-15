@@ -1,7 +1,7 @@
 {
     "pageTitle": "CV",
     "profile": "PROFIL",
-    "profileText": "Jag har bred erfarenhet inom IT-support som IT-tekniker hos Amplius Field Service Group AB och som laboratorieassistent på ALS Danderyd. Dessutom har jag arbetat inom detaljhandeln och som bokförsäljare. För närvarande studerar jag Software Engineering and Management vid Göteborgs Universitet.",
+    "profileText": "Jag har bred erfarenhet inom IT-support som IT-tekniker hos Amplius Field Service Group AB och som laboratorieassistent på ALS Danderyd. Dessutom har jag arbetat inom detaljhandeln. För närvarande studerar jag Software Engineering and Management vid Göteborgs Universitet.",
     "workExperience": "ARBETSLIVSERFARENHET",
     "workExperienceItem": [
         {
@@ -61,7 +61,9 @@
     "qualification": [
         "Programmering",
         "Webdesign",
+        "Android utveckling",
         "Datorkunnig",
+        "Cisco erfarenhet",
         "Flytande engelska",
         "Erfarenhet inom bild och videoredigering",
         "Kunnig inom excel"
@@ -79,6 +81,22 @@
             "text": "Hjälpte till med allmänna sysslor i affären, främst genom att packa upp och plocka varor.",
             "time": "2017 — Mars 2017, Orust"
         }
+    ],
+    "techniques": "TEKNIKER",
+    "techniqueItem": [
+        "Flutter",
+        "Typescript",
+        "JavaScript",
+        "HTML & CSS",
+        "Vue",
+        "C",
+        "Postman",
+        "Java & Kotlin",
+        "Android",
+        "SQL",
+        "Bootstrap",
+        "MongoDB",
+        "Python"
     ],
     "otherLanguage": {
         "name": "English",
