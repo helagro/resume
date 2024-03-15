@@ -1,5 +1,7 @@
-const emailAddrScrambled = env?.emailAddrScrambled ?? "B0bydWYsVGavdXRsb29rLmNvbQ=="
-const phoneNrScrambled = env?.phoneNrScrambled ?? "VLzcDMhYWC1YWFhY"
+const envNonNull = typeof env === "undefined" ? {} : env
+
+const emailAddrScrambled = envNonNull.emailAddrScrambled ?? "B0bydWYsVGavdXRsb29rLmNvbQ=="
+const phoneNrScrambled = envNonNull.phoneNrScrambled ?? "VLzcDMhYWC1YWFhY"
 
 function loadContactDetails() {
   const unscramble = (s) =>
