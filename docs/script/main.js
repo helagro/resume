@@ -1,7 +1,4 @@
-const envNonNull = typeof env === "undefined" ? {} : env
-
-const emailAddrScrambled = envNonNull.emailAddrScrambled ?? "B0bydWYsVGavdXRsb29rLmNvbQ=="
-const phoneNrScrambled = envNonNull.phoneNrScrambled ?? "VLzcDMhYWC1YWFhY"
+const emailAddrScrambled = "B0bydWYsVGavdXRsb29rLmNvbQ=="
 
 function loadContactDetails() {
   const unscramble = (s) =>
@@ -14,15 +11,19 @@ function loadContactDetails() {
     )
 
   const emailAddr = unscramble(emailAddrScrambled)
-  const phoneNr = unscramble(phoneNrScrambled)
 
   const emailElem = document.getElementById("email")
   emailElem.textContent = emailAddr
   emailElem.href = "mailto:" + emailAddr
 
-  const phoneElem = document.getElementById("phone")
-  phoneElem.textContent = phoneNr
-  phoneElem.href = "tel:" + phoneNr
+  if (typeof phoneNrScrambled === "undefined") {
+    for (const elem of document.getElementsByClassName("ifPhoneNr")) elem.style.display = "none"
+  } else {
+    const phoneNr = unscramble(phoneNrScrambled)
+    const phoneElem = document.getElementById("phone")
+    phoneElem.textContent = phoneNr
+    phoneElem.href = "tel:" + phoneNr
+  }
 }
 
 const showPFP = (value) =>
