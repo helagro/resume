@@ -126,8 +126,8 @@ section {
   background-color: #fff;
   position: relative;
   display: grid;
-  -moz-column-gap: 2em;
-       column-gap: 2em;
+  -moz-column-gap: 1.3em;
+       column-gap: 1.3em;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: max-content max-content;
   box-shadow: 0.1em 0.1em 0.5em #bdbdbd;
@@ -243,6 +243,15 @@ header .mediumText {
     display: none;
   }
 }
+.linkRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  justify-items: center;
+  justify-content: center;
+}
+
 footer {
   position: fixed;
   left: 50%;

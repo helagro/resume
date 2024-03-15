@@ -1,55 +1,63 @@
-function loadContactDetails(){
-    const unscramble = s => atob(s.slice(0, Math.floor(s.length / 2.5)).split("").reverse().join("") + s.slice(Math.floor(s.length / 2.5)))
-    const emailAddr = unscramble("B0bydWYsVGavdXRsb29rLmNvbQ==")
-    const phoneNr = unscramble("TLzcDMk5OS05OTk5")
+const emailAddrScrambled = env?.emailAddrScrambled ?? "B0bydWYsVGavdXRsb29rLmNvbQ=="
+const phoneNrScrambled = env?.phoneNrScrambled ?? "VLzcDMhYWC1YWFhY"
 
-    const emailElem = document.getElementById("email")
-    emailElem.textContent = emailAddr
-    emailElem.href = "mailto:" + emailAddr
-    
-    const phoneElem = document.getElementById("phone")
-    phoneElem.textContent = phoneNr
-    phoneElem.href = "tel:" + phoneNr
+function loadContactDetails() {
+  const unscramble = (s) =>
+    atob(
+      s
+        .slice(0, Math.floor(s.length / 2.5))
+        .split("")
+        .reverse()
+        .join("") + s.slice(Math.floor(s.length / 2.5))
+    )
+
+  const emailAddr = unscramble(emailAddrScrambled)
+  const phoneNr = unscramble(phoneNrScrambled)
+
+  const emailElem = document.getElementById("email")
+  emailElem.textContent = emailAddr
+  emailElem.href = "mailto:" + emailAddr
+
+  const phoneElem = document.getElementById("phone")
+  phoneElem.textContent = phoneNr
+  phoneElem.href = "tel:" + phoneNr
 }
 
-const showPFP = (value) => document.getElementById("profilePic").style.display = value ? "unset" : "none"
+const showPFP = (value) =>
+  (document.getElementById("profilePic").style.display = value ? "unset" : "none")
 
-
-
-// ============ MOBILE OPTIONS ===============
+/* --------------------- MOBILE OPTIONS --------------------- */
 
 let popupIsShowing = false
 
-
 const toggleOptionsPopup = () => showOptionsPopup(!popupIsShowing)
 
-function handleOutsideTouch(event){
-    //exit if the click was within the popup or on the toggle button
-    if(event.target.closest("#optionsContent") || event.target.closest("#toggleOptionsBtn")) return
+function handleOutsideTouch(event) {
+  //exit if the click was within the popup or on the toggle button
+  if (event.target.closest("#optionsContent") || event.target.closest("#toggleOptionsBtn")) return
 
-    showOptionsPopup(false)
+  showOptionsPopup(false)
 }
 
-function showOptionsPopup(doShow){
-    if(popupIsShowing == doShow) return
-    popupIsShowing = doShow
+function showOptionsPopup(doShow) {
+  if (popupIsShowing == doShow) return
+  popupIsShowing = doShow
 
-    rotateToggleOptionsPopupBtn(popupIsShowing)
+  rotateToggleOptionsPopupBtn(popupIsShowing)
 
-    const optionsContent = document.getElementById("optionsContent")
-    optionsContent.style.display = popupIsShowing ? "grid" : "none"
+  const optionsContent = document.getElementById("optionsContent")
+  optionsContent.style.display = popupIsShowing ? "grid" : "none"
 }
 
-function rotateToggleOptionsPopupBtn(popupIsShowing){
-    let rotation = popupIsShowing ? 180 : 0
-    const img = document.getElementById("toggleOptionsBtnImg")
-    img.style.transform = `rotate(${rotation}deg)`
+function rotateToggleOptionsPopupBtn(popupIsShowing) {
+  let rotation = popupIsShowing ? 180 : 0
+  const img = document.getElementById("toggleOptionsBtnImg")
+  img.style.transform = `rotate(${rotation}deg)`
 }
 
+/* ---------------------- ENTRY POINTS ---------------------- */
 
-
-// ============= ENTRY POINTS =============
 loadContactDetails()
 
-document.addEventListener('mousedown', handleOutsideTouch)
-document.addEventListener('touchstart', handleOutsideTouch)
+document.addEventListener("mousedown", handleOutsideTouch)
+document.addEventListener("touchstart", handleOutsideTouch)

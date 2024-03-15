@@ -1,9 +1,14 @@
 {
     "pageTitle": "CV",
     "profile": "PROFIL",
-    "profileText": "Bred erfarenhet av affärsarbete samt erfarenhet som laboratorieassistent och fritidsassistent. Studerat datavetenskap, programmering och medieredigering.",
+    "profileText": "Jag har bred erfarenhet inom IT-support som IT-tekniker hos Amplius Field Service Group AB och som laboratorieassistent på ALS Danderyd. Dessutom har jag arbetat inom detaljhandeln och som bokförsäljare. För närvarande studerar jag Software Engineering and Management vid Göteborgs Universitet.",
     "workExperience": "ARBETSLIVSERFARENHET",
     "workExperienceItem": [
+        {
+            "title": "IT-tekniker, Amplius Field Service Group AB",
+            "text": "Som IT-tekniker ansvarade jag för att tillhandahålla teknisk support och service till olika klienter. Min roll innefattade omfattande fältarbete där jag hanterade och löste en mångfald av utrustningar, inklusive Cisco-enheter, POS-enheter och datorer. ",
+            "time": "augusti 2022 — nuvarande"
+        },
         {
             "title": "Laboratorieassistent, ALS Danderyd",
             "text": "Arbetsuppgifterna innefattade bland annat invägning av jordprover, uttömmning av provvialer och diskning av olika typer av behållare. Jag hade även ett extra ansvar som IT support, där uppgifterna rörde sig mycket kring installation och felsökning av mjukvara, datorer samt enheter kopplade till dem. Ett annat större ansvarsområde var hantering av nyckelbrickor.",
@@ -23,15 +28,15 @@
             "title": "Fritidsassistent, Orust Kommun",
             "text": "Deltog i fritidshemmets pedagogiska verksamhet.",
             "time": "juni 2018 — juli 2018, Ellös"
-        },
-        {
-            "title": "Bokförsäljare på bokmässa, Syneidos Kvalitetsliteratur AB",
-            "text": "Inredde montern och sålde böcker.",
-            "time": "sep 2012 — sep 2012, Göteborg"
         }
     ],
     "education": "UTBILDNING",
     "educationItem": [
+        {
+            "title": "Göteborgs Universitet",
+            "text": "Software Engineering and Management",
+            "time": "2022 — nuvarande, Göteborg"
+        },
         {
             "title": "Chalmers Tekniska Högskola",
             "text": "Informationsteknik",
@@ -40,16 +45,16 @@
         {
             "title": "Fria Läroverken",
             "text": "Teknik, Informations- och mediainriktning",
-            "time": "aug 2019 — juni 2021, Kalmar"
+            "time": "augusti 2019 — juni 2021, Kalmar"
         },
         {
             "title": "Jensen Gymnasieskola",
             "text": "Teknik, informationsinriktning",
-            "time": "aug 2018 — juni 2019, Göteborg"
+            "time": "augusti 2018 — juni 2019, Göteborg"
         },
         {
             "title": "Orust Waldorfskola",
-            "time": "aug 2009 — juni 2018, Orust"
+            "time": "augusti 2009 — juni 2018, Orust"
         }
     ],
     "qualifications": "KOMPETENS",
