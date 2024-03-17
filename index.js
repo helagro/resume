@@ -11,18 +11,7 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use(rootPath, express.static(path.join(__dirname, "docs")))
-
-app.get("/:filename", (req, res, next) => {
-  const filename = req.params.filename
-  const filePath = path.join(staticFilesDirectory, filename)
-
-  fs.access(filePath, fs.constants.F_OK, (err) => {
-    if (err) return next()
-
-    res.sendFile(filePath)
-  })
-})
+app.use(rootPath, express.static(folderPath, {extensions: ['html']}))
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}, hosting ${folderPath}`)
