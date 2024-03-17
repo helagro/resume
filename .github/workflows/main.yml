@@ -20,5 +20,5 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            cd /home/e/resume
+            cd /home/h/resume
             git pull
