@@ -13,6 +13,10 @@ app.use((req, res, next) => {
 
 app.use(rootPath, express.static(folderPath, { extensions: ["html"] }))
 
+app.get("/", (req, res) => {
+  res.redirect(rootPath + "/en")
+})
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}, hosting ${folderPath}`)
 })
