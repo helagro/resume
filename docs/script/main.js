@@ -60,6 +60,8 @@ function rotateToggleOptionsPopupBtn(popupIsShowing) {
 
 /* ---------------------- ENTRY POINTS ---------------------- */
 
+console.log("Version 1")
+
 loadContactDetails()
 
 document.addEventListener("mousedown", handleOutsideTouch)
