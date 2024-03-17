@@ -11,7 +11,7 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use(rootPath, express.static(folderPath, {extensions: ['html']}))
+app.use(rootPath, express.static(folderPath, { extensions: ["html"] }))
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}, hosting ${folderPath}`)
