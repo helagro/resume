@@ -13,8 +13,9 @@ app.use((req, res, next) => {
 
 app.use(rootPath, express.static(folderPath, { extensions: ["html"] }))
 
-app.get("/", (req, res) => {
-  res.redirect(rootPath + "/en")
+app.get(rootPath + "/", (req, res) => {
+  console.log("Root path")
+  res.sendFile(path.join(folderPath, "en.html"))
 })
 
 app.listen(port, () => {
