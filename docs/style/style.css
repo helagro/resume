@@ -220,6 +220,10 @@ header .mediumText {
   margin-top: 0.7em;
 }
 
+.printOnly {
+  display: none;
+}
+
 @page {
   margin: 0;
   margin-right: 2em;
@@ -241,6 +245,9 @@ header .mediumText {
   }
   .credit {
     display: none;
+  }
+  .printOnly {
+    display: block;
   }
 }
 .linkRow {
