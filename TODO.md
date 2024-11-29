@@ -5,5 +5,4 @@
 - add letter of recommendation
 - link to github for techniques
 - improve phrasing
-- combine both years of shop assistant
 - add scripting

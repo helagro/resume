@@ -17,12 +17,7 @@
     {
       "title": "Butiksbiträde, Ica Stillingsön",
       "text": "Kassatjänst i en ICA-affär, mestadels i en specialavdelning där framförallt trädgårdsprodukter, leksaker och produkter för hemmafixare såldes. Jag hanterade även påfyllning av varor, städning och rensning av ogräs.",
-      "time": "Juni 2020 — Juli 2020, Orust"
-    },
-    {
-      "title": "Butiksbiträde, Ica Stillingsön",
-      "text": "Samma som ovan.",
-      "time": "Juni 2019 — Juli 2019, Orust"
+      "time": "Juni 2019 — Juli 2019, Juni 2020 — Juli 2020, Orust"
     },
     {
       "title": "Fritidsassistent, Orust Kommun",
@@ -78,21 +73,6 @@
     }
   ],
   "techniques": "TEKNIKER",
-  "techniqueItem": [
-    "Flutter",
-    "Typescript",
-    "JavaScript",
-    "HTML & CSS",
-    "Vue",
-    "C",
-    "Postman",
-    "Java & Kotlin",
-    "Android",
-    "SQL",
-    "Bootstrap",
-    "MongoDB",
-    "Python"
-  ],
   "otherLanguage": {
     "name": "English",
     "file": "en.html"

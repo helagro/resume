@@ -78,21 +78,6 @@
     }
   ],
   "techniques": "TECHNIQUES",
-  "techniqueItem": [
-    "Flutter",
-    "Typescript",
-    "JavaScript",
-    "HTML & CSS",
-    "Vue",
-    "C",
-    "Postman",
-    "Java & Kotlin",
-    "Android",
-    "SQL",
-    "Bootstrap",
-    "MongoDB",
-    "Python"
-  ],
   "otherLanguage": {
     "name": "Svenska",
     "file": "se.html"
