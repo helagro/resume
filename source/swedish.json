@@ -11,12 +11,12 @@
     },
     {
       "title": "Laboratorieassistent, ALS Danderyd",
-      "text": "Arbetsuppgifterna innefattade bland annat invägning av jordprover, uttömmning av provvialer och diskning av olika typer av behållare. Jag hade även ett extra ansvar som IT support, där uppgifterna rörde sig mycket kring installation och felsökning av mjukvara, datorer samt enheter kopplade till dem. Ett annat större ansvarsområde var hantering av nyckelbrickor.",
+      "text": "Ansvarig för förberedelse av jordprover för analys och genomförande av städning och kassering efter analys. Jag hade även ett extra ansvar som IT support, där uppgifterna rörde sig mycket kring installation och felsökning av mjukvara, datorer samt enheter kopplade till dem. Ett annat större ansvarsområde var hantering av nyckelbrickor.",
       "time": "April 2022 — Augusti 2022, Danderyd"
     },
     {
       "title": "Butiksbiträde, Ica Stillingsön",
-      "text": "Kassatjänst i en ICA-affär, mestadels i en specialavdelning där framförallt trädgårdsprodukter, leksaker och produkter för hemmafixare såldes. Jag hanterade även påfyllning av varor, städning och rensning av ogräs.",
+      "text": "Kassatjänst i en ICA-affär, mestadels i en specialavdelning där framförallt trädgårdsprodukter, leksaker och produkter för hemmafixare såldes.",
       "time": "Juni 2019 — Juli 2019, Juni 2020 — Juli 2020, Orust"
     },
     {
@@ -46,10 +46,6 @@
       "title": "Jensen Gymnasieskola",
       "text": "Teknik, informationsinriktning",
       "time": "Augusti 2018 — Juni 2019, Göteborg"
-    },
-    {
-      "title": "Orust Waldorfskola",
-      "time": "Augusti 2009 — Juni 2018, Orust"
     }
   ],
   "qualifications": "KOMPETENS",
@@ -64,14 +60,6 @@
   ],
   "hobbies": "INTRESSEN",
   "hobbyItem": ["Styrketräning", "Litteratur", "Klättring"],
-  "internship": "PRAKTIKPLATSER",
-  "internshipItem": [
-    {
-      "title": "Varuplockare, Ica Stillingsön",
-      "text": "Hjälpte till med allmänna sysslor i affären, främst genom att packa upp och plocka varor.",
-      "time": "2017 — Mars 2017, Orust"
-    }
-  ],
   "techniques": "TEKNIKER",
   "otherLanguage": {
     "name": "English",

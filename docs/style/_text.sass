@@ -1,7 +1,6 @@
 @use "_var"
 
-
-// ============ HEADERS =============
+/* ------------------------- HEADERS ------------------------ */
 
 h1
     color: var.$strong-color
@@ -10,7 +9,6 @@ h1
     margin-bottom: 0.1em
     letter-spacing: 0.06em
     font-weight: 500
-
 
 h2
     color: var.$light-gray
@@ -24,30 +22,32 @@ h3
     font-size: 1.15em
     line-height: 0.8em
     font-weight: 500
-    
 
-
-
-// ============== MAIN CONTENT ============
+/* ---------------------- MAIN CONTENT ---------------------- */
 
 .bodyText
     color: var.$text-color
-    font-size: 0.9em  
+    font-size: 0.9em
 
-    
-// ========== INFO TEXT ============
+/* ------------------------ INFO TEXT ----------------------- */
 
 .largeText
     color: var.$dark-gray
-    font-size: 1rem  
+    font-size: 1rem
     margin: 0.6em 0
 
 .mediumText
     color: var.$medium-gray
-    font-size: 0.9em  
+    font-size: 0.9em
     line-height: 0.5em
 
 .smallText
     color: var.$light-gray
     line-height: 0.5em
     font-size: 0.8em
+
+/* -------------------------- LINKS ------------------------- */
+
+a.disabled
+    pointer-events: none
+    text-decoration: none

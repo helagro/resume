@@ -1,8 +1,7 @@
 - shorten
-  - rm Orust Waldorf?
   - rm hobbies?
   - shorten non-related work experiences
 - add letter of recommendation
-- link to github for techniques
 - improve phrasing
 - add scripting
+- fix pipeline

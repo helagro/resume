@@ -11,18 +11,13 @@
     },
     {
       "title": "Laboratory Assistant, ALS Danderyd",
-      "text": "Responsibilities included weighing soil samples, emptying sample vials, and washing various types of containers. I also had an additional responsibility as IT support, which involved tasks primarily related to the installation and troubleshooting of software, computers, and connected devices. Another major responsibility was key fob management.",
+      "text": "Responsible for preparing soil samples for analysis and performing post-analysis cleanup. I also had an additional responsibility as IT support, which involved tasks primarily related to the installation and troubleshooting of software, computers, and connected devices. Another major responsibility was key fob management.",
       "time": "April 2022 — August 2022, Danderyd"
     },
     {
       "title": "Shop Assistant, Ica Stillingsön",
-      "text": "Cashier service in an ICA store, mostly in a special department where garden products, toys, and home improvement products were sold. I also handled restocking of goods, cleaning, and weeding.",
-      "time": "June 2020 — July 2020, Orust"
-    },
-    {
-      "title": "Shop Assistant, Ica Stillingsön",
-      "text": "Same as above.",
-      "time": "June 2019 — July 2019, Orust"
+      "text": "Cashier service in an ICA store, mostly in a special department where garden products, toys, and home improvement products were sold.",
+      "time": "June 2020 — July 2020, June 2019 — July 2019, Orust"
     },
     {
       "title": "Leisure Assistant, Orust Municipality",
@@ -51,10 +46,6 @@
       "title": "Jensen Gymnasieskola",
       "text": "Technology, Information",
       "time": "August 2018 — June 2019, Gothenburg"
-    },
-    {
-      "title": "Orust Waldorfskola",
-      "time": "August 2009 — June 2018, Orust"
     }
   ],
   "qualifications": "QUALIFICATIONS",
@@ -69,14 +60,6 @@
   ],
   "hobbies": "HOBBIES",
   "hobbyItem": ["Strength training", "Literature", "Climbing"],
-  "internship": "INTERNSHIPS",
-  "internshipItem": [
-    {
-      "title": "Shop Assistant, Ica Stillingsön",
-      "text": "Assisted with general tasks in the store, primarily by unpacking and picking goods.",
-      "time": "2017 — March 2017, Orust"
-    }
-  ],
   "techniques": "TECHNIQUES",
   "otherLanguage": {
     "name": "Svenska",
