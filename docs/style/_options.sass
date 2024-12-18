@@ -26,6 +26,11 @@
         width: max-content
         height: min-content
 
+#showImages, #showImagesLabel
+    @media (max-width: var.$pfp-min-screen-width)
+        cursor: not-allowed
+        opacity: 0.3
+
 #toggleOptionsBtn
     background-color: var.$options-background
     border: none

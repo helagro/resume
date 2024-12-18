@@ -1,0 +1,30 @@
+---
+techniqueItem:
+  - name: Android
+    link:
+  - name: C
+    link: https://github.com/helagro?tab=repositories&q=&type=&language=c&sort=
+  - name: C++
+    link: https://github.com/helagro?tab=repositories&q=&type=&language=c%2B%2B&sort=
+  - name: Flutter
+    link:
+  - name: HTML & CSS
+    link:
+  - name: Java
+    link: https://github.com/helagro?tab=repositories&q=&type=&language=java&sort=
+  - name: JavaScript
+    link: https://github.com/helagro?tab=repositories&q=&type=&language=javascript&sort=
+  - name: Kotlin
+    link: https://github.com/helagro?tab=repositories&q=&type=&language=kotlin&sort=
+  - name: MongoDB
+    link:
+  - name: Postman
+    link:
+  - name: Python
+    link: https://github.com/helagro?tab=repositories&q=&type=&language=python&sort=
+  - name: SQL
+    link:
+  - name: Typescript
+    link: https://github.com/helagro?tab=repositories&q=&type=&language=typescript&sort=
+  - name: Vue
+    link:

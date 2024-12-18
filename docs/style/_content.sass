@@ -8,7 +8,7 @@ section
     box-sizing: border-box
     min-height: var.$page-height
     margin: 1em 0
-    padding: 2em 1.3em 3em 3.8em
+    padding: 2em 2em 1em 2em
     background-color: var.$page-color
     position: relative
     display: grid
@@ -16,9 +16,12 @@ section
     grid-template-columns: var.$page-grid-division
     grid-template-rows: max-content max-content
     box-shadow: 0.1em 0.1em 0.5em var.$shadow-color
+    height: var.$page-height
+    overflow: hidden
 
     //Makes the sidebar become a row on mobile
     @media (max-width: var.$sidebar-to-row-size)
+        max-height: none
         grid-template-columns: auto
         padding-right: 2em
 
@@ -35,13 +38,15 @@ section
     margin-left: var.$std-indent *0.2
     margin-top: 1em
 
+    a
+        color: var.$text-color
+
 .profilePic
     //Hide initially
     display: none
 
 .infoItem
-    padding-left: var.$std-indent
-    margin-bottom: 2.5em
+    margin-bottom: 2em
     margin-top: 1.5em
 
 // ========== SIDE CONTENT ===========

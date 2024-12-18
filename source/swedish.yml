@@ -1,0 +1,61 @@
+---
+pageTitle: CV
+profile: PROFIL
+profileText:
+  Jag har bred erfarenhet inom IT-support som IT-tekniker hos Amplius Field
+  Service Group AB och som laboratorieassistent på ALS Danderyd. För närvarande studerar
+  jag Software Engineering and Management vid Göteborgs Universitet.
+workExperience: ARBETSLIVSERFARENHET
+workExperienceItem:
+  - title: IT-tekniker
+    company: Amplius Field Service Group AB
+    companyLink: https://amplius.se/
+    text:
+      'Som IT-tekniker ansvarade jag för att tillhandahålla teknisk support och
+      service till olika klienter. Min roll innefattade omfattande fältarbete där jag
+      hanterade och löste en mångfald av utrustningar, inklusive Cisco-enheter, POS-enheter
+      och datorer. '
+    time: Augusti 2022 — Nuvarande
+  - title: Laboratorieassistent
+    company: ALS Danderyd
+    companyLink: https://www.alsglobal.se/
+    text:
+      Ansvarig för förberedelse av jordprover för analys och genomförande av städning
+      och kassering efter analys. Jag hade även ett extra ansvar som IT support, där
+      uppgifterna rörde sig kring installation och felsökning av mjukvara, datorer samt
+      enheter kopplade till dem. Ett annat större ansvarsområde var hantering av nyckelbrickor.
+    time: April 2022 — Augusti 2022, Danderyd
+  - title: Butiksbiträde
+    company: Ica Stillingsön
+    companyLink: https://www.ica.se/butiker/nara/orust/stillingsons-handel-1003402/
+    text: Kassaarbete och butiksunderhåll.
+    time: Juni 2019 — Juli 2019, Juni 2020 — Juli 2020, Orust
+  # - title: Fritidsassistent, Orust Kommun
+  #   time: Juni 2018 — Juli 2018, Ellös
+education: UTBILDNING
+educationItem:
+  - title: Göteborgs Universitet
+    text: Software Engineering and Management
+    time: 2022 — Nuvarande, Göteborg
+  - title: Chalmers Tekniska Högskola
+    text: Informationsteknik
+    time: 2021 — 2021, Göteborg
+  - title: Fria Läroverken
+    text: Teknik, Informations- och mediainriktning
+    time: Augusti 2019 — Juni 2021, Kalmar
+  - title: Jensen Gymnasieskola
+    text: Teknik, informationsinriktning
+    time: Augusti 2018 — Juni 2019, Göteborg
+qualifications: KOMPETENS
+qualification:
+  - Programmering
+  - IT-service
+  - Webdesign
+  - Android utveckling
+  - Flytande engelska
+  - Erfarenhet inom bild och videoredigering
+  - Kunnig inom excel
+techniques: TEKNIKER
+otherLanguage:
+  name: English
+  file: en.html

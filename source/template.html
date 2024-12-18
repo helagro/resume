@@ -20,8 +20,8 @@
                 <div class="leftColumn">
                     <header class="columns">
                         <img class="profilePic" id="profilePic" src="img/me.jpg"
-                            alt="Profile picture of Henrik Lagrosen" width="110px" height="110px">
-                        <div class="floor">
+                            alt="Profile picture of Henrik Lagrosen" width="100px" height="100px">
+                        <div class="floor" id="headerText">
                             <h1>Henrik Lagrosen</h1>
                             <div class="columns">
                                 <a class="largeText" id="email"></a>
@@ -40,6 +40,28 @@
                         <h2>{{workExperience}}</h2>
 
                         {{#each workExperienceItem}}
+                        <div class="infoItem">
+                            <h3>{{this.title}}, <a href="{{this.companyLink}}">{{this.company}}</a></h3>
+                            <p class="bodyText">{{this.text}}</p>
+                            <p class="smallText">{{this.time}}</p>
+                        </div>
+                        {{/each}}
+                    </div>
+
+                    <div class="pageContent">
+                        <h2>{{education}}</h2>
+                        {{#each educationItem}}
+                        <div class="infoItem">
+                            <h3>{{this.title}}</h3>
+                            <p class="bodyText">{{this.text}}</p>
+                            <p class="smallText">{{this.time}}</p>
+                        </div>
+                        {{/each}}
+                    </div>
+
+                    <div class="pageContent">
+                        <h2>{{internship}}</h2>
+                        {{#each internshipItem}}
                         <div class="infoItem">
                             <h3>{{this.title}}</h3>
                             <p class="bodyText">{{this.text}}</p>
@@ -67,6 +89,17 @@
                         {{/each}}
                     </div>
 
+                    <div>
+                        <h2>{{techniques}}</h2>
+
+                        {{#each techniqueItem}}
+                        <a href="{{this.link}}" class="{{#isMissing this.link}}disabled{{/isMissing}}">
+                            <p class="largeText">{{this.name}}</p>
+                        </a>
+                        {{/each}}
+                    </div>
+
+
                     <div class="linkRow">
                         <a href="https://www.linkedin.com/in/henrik-lagrosen">
                             <img src="img/LI-In-Bug.png" alt="LinkedIn link" height="34">
@@ -87,46 +120,9 @@
 
             </section>
 
-            <!-- ---------------------- PAGE TWO ----------------------- -->
-
-            <section>
-                <div class="leftColumn">
-                    <div class="pageContent">
-                        <h2>{{education}}</h2>
-                        {{#each educationItem}}
-                        <div class="infoItem">
-                            <h3>{{this.title}}</h3>
-                            <p class="bodyText">{{this.text}}</p>
-                            <p class="smallText">{{this.time}}</p>
-                        </div>
-                        {{/each}}
-                    </div>
-
-                    <div class="pageContent">
-                        <h2>{{internship}}</h2>
-                        {{#each internshipItem}}
-                        <div class="infoItem">
-                            <h3>{{this.title}}</h3>
-                            <p class="bodyText">{{this.text}}</p>
-                            <p class="smallText">{{this.time}}</p>
-                        </div>
-                        {{/each}}
-                    </div>
-                </div>
-
-                <div class="rightColumn">
-                    <div>
-                        <h2>{{techniques}}</h2>
-
-                        {{#each techniqueItem}}
-                        <a href="{{this.link}}" class="{{#isMissing this.link}}disabled{{/isMissing}}">
-                            <p class="largeText">{{this.name}}</p>
-                        </a>
-                        {{/each}}
-                    </div>
-                </div>
-            </section>
         </div>
+
+        <!-- ----------------------- OPTIONS ----------------------- -->
 
         <div class="optionsPanelContainer">
             <button onclick="toggleOptionsPopup()" id="toggleOptionsBtn">
@@ -141,7 +137,7 @@
                     </a>
                 </div>
                 <p>
-                    <label for="showImages"><span class="largeText">Show Image</span></label>
+                    <label for="showImages"><span class="largeText" id="showImagesLabel">Show Image</span></label>
                     <input type="checkbox" name="showImages" id="showImages" autocomplete="off"
                         onchange="showPFP(this.checked)">
                 </p>
@@ -152,6 +148,8 @@
         </div>
 
     </main>
+
+    <!-- ----------------------- FOOTER ------------------------ -->
 
     <footer>
         <div class="credit">

@@ -1,3 +1,7 @@
+/* ------------------------- LAYOUT ------------------------- */
+/* ------------------------- SPACING ------------------------ */
+/* ------------------------- COLORS ------------------------- */
+/* -------------------------- MEDIA ------------------------- */
 /* ------------------------- HEADERS ------------------------ */
 h1 {
   color: #2196F3;
@@ -10,7 +14,7 @@ h1 {
 
 h2 {
   color: #818181;
-  font-size: 1.3em;
+  font-size: 1.1em;
   line-height: 1.3em;
   font-weight: 100;
   letter-spacing: 0.08em;
@@ -19,7 +23,7 @@ h2 {
 h3 {
   color: #3a3a3a;
   font-size: 1.15em;
-  line-height: 0.8em;
+  line-height: 0.3em;
   font-weight: 500;
 }
 
@@ -84,6 +88,13 @@ a.disabled {
   height: min-content;
 }
 
+@media (max-width: 30em) {
+  #showImages, #showImagesLabel {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
+}
+
 #toggleOptionsBtn {
   background-color: #e3e3e3;
   border: none;
@@ -131,7 +142,7 @@ section {
   box-sizing: border-box;
   min-height: 297mm;
   margin: 1em 0;
-  padding: 2em 1.3em 3em 3.8em;
+  padding: 2em 2em 1em 2em;
   background-color: #fff;
   position: relative;
   display: grid;
@@ -140,9 +151,12 @@ section {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: max-content max-content;
   box-shadow: 0.1em 0.1em 0.5em #bdbdbd;
+  height: 297mm;
+  overflow: hidden;
 }
 @media (max-width: 42em) {
   section {
+    max-height: none;
     grid-template-columns: auto;
     padding-right: 2em;
   }
@@ -163,14 +177,16 @@ section {
   margin-left: 0.12em;
   margin-top: 1em;
 }
+.pageContent a {
+  color: #1b1b1b;
+}
 
 .profilePic {
   display: none;
 }
 
 .infoItem {
-  padding-left: 0.6em;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
   margin-top: 1.5em;
 }
 
@@ -187,10 +203,9 @@ section {
 }
 
 header {
-  margin-bottom: 2em;
+  margin-bottom: 0m;
 }
 header .floor {
-  margin-bottom: 0.5em;
   height: -moz-min-content;
   height: min-content;
   margin-top: auto;
@@ -200,6 +215,9 @@ header .columns {
 }
 header .mediumText {
   margin-left: 0.9em;
+}
+header a {
+  line-height: 0.3em;
 }
 
 .profilePic {
@@ -235,9 +253,14 @@ header .mediumText {
 
 @page {
   margin: 0;
-  margin-right: 2em;
 }
 @media print {
+  main {
+    margin: 0;
+    padding: 0 !important;
+    max-width: none;
+    background-color: red;
+  }
   .infoItem {
     page-break-inside: avoid;
   }
@@ -246,12 +269,11 @@ header .mediumText {
     box-shadow: none;
     height: auto;
     min-height: auto;
+    max-height: 297mm;
+    overflow: hidden;
     width: 100%;
     max-width: 100%;
-  }
-  main {
     margin: 0;
-    max-width: none;
   }
   .credit {
     display: none;

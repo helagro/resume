@@ -1,12 +1,19 @@
+@use '_var'
 
 .printOnly
     display: none
 
 @page
     margin: 0
-    margin-right: 2em
 
 @media print
+
+    main
+        margin: 0
+        padding: 0 !important
+        max-width: none
+        background-color: red
+
     .infoItem
         page-break-inside: avoid
 
@@ -15,12 +22,11 @@
         box-shadow: none
         height: auto
         min-height: auto
+        max-height: var.$page-height
+        overflow: hidden
         width: 100%
         max-width: 100%
-
-    main
         margin: 0
-        max-width: none
 
     .credit
         display: none

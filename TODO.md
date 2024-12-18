@@ -1,7 +1,3 @@
-- shorten
-  - rm hobbies?
-  - shorten non-related work experiences
 - add letter of recommendation
 - improve phrasing
-- add scripting
-- fix pipeline
+  - I handled and resolved a variety of equipment

@@ -1,10 +1,11 @@
 const Handlebars = require('handlebars')
 const fs = require('fs')
+const yaml = require('js-yaml')
 
 /* ----------------------- LOAD SHARED ---------------------- */
 
-const sharedStr = fs.readFileSync('source/shared.json', 'utf8')
-const sharedObj = JSON.parse(sharedStr)
+const sharedStr = fs.readFileSync('source/shared.yml', 'utf8')
+const sharedObj = yaml.load(sharedStr)
 
 /* ------------------------- HELPERS ------------------------ */
 
@@ -18,11 +19,11 @@ Handlebars.registerHelper('isMissing', function (value, options) {
 
 const languages = [
   {
-    inputName: 'english.json',
+    inputName: 'english.yml',
     outputName: 'en.html',
   },
   {
-    inputName: 'swedish.json',
+    inputName: 'swedish.yml',
     outputName: 'se.html',
   },
 ]
@@ -36,7 +37,7 @@ for (const language of languages) {
 function compileLanguage(lang) {
   const templateSource = fs.readFileSync('source/template.html', 'utf8')
   const contentStr = fs.readFileSync(`source/${lang.inputName}`, 'utf8')
-  const contentObj = JSON.parse(contentStr)
+  const contentObj = yaml.load(contentStr)
 
   const context = {
     ...sharedObj,
