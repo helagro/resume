@@ -1,11 +1,12 @@
 const Handlebars = require('handlebars')
 const fs = require('fs')
 const yaml = require('js-yaml')
+const path = require('path')
 
-/* ----------------------- LOAD SHARED ---------------------- */
+/* ------------------------ CONSTANTS ----------------------- */
 
-const sharedStr = fs.readFileSync('source/shared.yml', 'utf8')
-const sharedObj = yaml.load(sharedStr)
+const SOURCE_DIR = 'source'
+const OUTPUT_DIR = 'docs'
 
 /* ------------------------- HELPERS ------------------------ */
 
@@ -14,6 +15,20 @@ Handlebars.registerHelper('isMissing', function (value, options) {
     return options.fn(this)
   else return options.inverse(this)
 })
+
+Handlebars.registerHelper('sourceExists', function (value, options) {
+  if (!value) return options.inverse(this)
+
+  const filePath = path.join(OUTPUT_DIR, value)
+  if (fs.existsSync(filePath)) return options.fn(this)
+  else return options.inverse(this)
+})
+
+/* ----------------------- LOAD SHARED ---------------------- */
+
+const sharedPath = path.join(SOURCE_DIR, 'shared.yml')
+const sharedStr = fs.readFileSync(sharedPath, 'utf8')
+const sharedObj = yaml.load(sharedStr)
 
 /* ----------------- LOOP THROUGH LANGUAGES ----------------- */
 
@@ -35,8 +50,11 @@ for (const language of languages) {
 /* --------------------- COMPILE LANGUAGE -------------------- */
 
 function compileLanguage(lang) {
-  const templateSource = fs.readFileSync('source/template.html', 'utf8')
-  const contentStr = fs.readFileSync(`source/${lang.inputName}`, 'utf8')
+  const templateSourcePath = path.join(SOURCE_DIR, 'template.html')
+  const templateSource = fs.readFileSync(templateSourcePath, 'utf8')
+
+  const contentPath = path.join(SOURCE_DIR, lang.inputName)
+  const contentStr = fs.readFileSync(contentPath, 'utf8')
   const contentObj = yaml.load(contentStr)
 
   const context = {
@@ -46,5 +64,6 @@ function compileLanguage(lang) {
   const template = Handlebars.compile(templateSource)
   const result = template(context)
 
-  fs.writeFileSync(`docs/${lang.outputName}`, result)
+  const outputPath = path.join(OUTPUT_DIR, lang.outputName)
+  fs.writeFileSync(outputPath, result)
 }

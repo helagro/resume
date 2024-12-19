@@ -34,16 +34,18 @@ workExperienceItem:
 education: EDUCATION
 educationItem:
   - title: University of Gothenburg
-    text: Software Engineering and Management
+    text: Software Engineering and Management.
+    resText: Letter of recommendation.
+    resLink: attachment/recomendation-letter-1.pdf
     time: 2022 — Present, Gothenburg
   - title: Chalmers University of Technology
-    text: Information Technology
+    text: Information Technology.
     time: 2021 — 2021, Gothenburg
   - title: Fria Läroverken
-    text: Technology, Information and Media
+    text: 'Technology, Information and Media. Average grade: 18.96.'
     time: August 2019 — June 2021, Kalmar
   - title: Jensen Gymnasieskola
-    text: Technology, Information
+    text: Technology, Information.
     time: August 2018 — June 2019, Gothenburg
 qualifications: QUALIFICATIONS
 qualification:

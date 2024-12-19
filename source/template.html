@@ -24,9 +24,9 @@
                         <div class="floor" id="headerText">
                             <h1>Henrik Lagrosen</h1>
                             <div class="columns">
-                                <a class="largeText" id="email"></a>
+                                <a class="largeText" id="email" target="_blank" rel="noopener noreferrer"></a>
                                 <span class="columnDivider ifPhoneNr"></span>
-                                <a class="largeText ifPhoneNr" id="phone"></a>
+                                <a class="largeText ifPhoneNr" id="phone" target="_blank" rel="noopener noreferrer"></a>
                             </div>
                         </div>
                     </header>
@@ -41,7 +41,8 @@
 
                         {{#each workExperienceItem}}
                         <div class="infoItem">
-                            <h3>{{this.title}}, <a href="{{this.companyLink}}">{{this.company}}</a></h3>
+                            <h3>{{this.title}}, <a href="{{this.companyLink}}" target="_blank"
+                                    rel="noopener noreferrer">{{this.company}}</a></h3>
                             <p class="bodyText">{{this.text}}</p>
                             <p class="smallText">{{this.time}}</p>
                         </div>
@@ -53,7 +54,13 @@
                         {{#each educationItem}}
                         <div class="infoItem">
                             <h3>{{this.title}}</h3>
-                            <p class="bodyText">{{this.text}}</p>
+                            <p class="bodyText">{{this.text}}
+                                {{#sourceExists this.resLink}}
+                                <a href="{{this.resLink}}" target="_blank" rel="noopener noreferrer"
+                                    class="importantLink">{{this.resText}}
+                                </a>
+                                {{/sourceExists}}
+                            </p>
                             <p class="smallText">{{this.time}}</p>
                         </div>
                         {{/each}}
@@ -93,7 +100,8 @@
                         <h2>{{techniques}}</h2>
 
                         {{#each techniqueItem}}
-                        <a href="{{this.link}}" class="{{#isMissing this.link}}disabled{{/isMissing}}">
+                        <a href="{{this.link}}" target="_blank" rel="noopener noreferrer"
+                            class="{{#isMissing this.link}}disabled{{/isMissing}}">
                             <p class="largeText">{{this.name}}</p>
                         </a>
                         {{/each}}
@@ -101,17 +109,18 @@
 
 
                     <div class="linkRow">
-                        <a href="https://www.linkedin.com/in/henrik-lagrosen">
+                        <a href="https://www.linkedin.com/in/henrik-lagrosen" target="_blank" rel="noopener noreferrer">
                             <img src="img/LI-In-Bug.png" alt="LinkedIn link" height="34">
                         </a>
 
-                        <a href="https://github.com/helagro" style="padding-bottom: .1em;">
+                        <a href="https://github.com/helagro" style="padding-bottom: .1em;" target="_blank"
+                            rel="noopener noreferrer">
                             <img src="img/github-mark.svg" alt="github link" height="33">
                         </a>
 
                         {{#with otherLanguage}}
                         <a href="https://helagro.github.io/resume/{{file}}" class="printOnly"
-                            style="margin: -.13em .35em 0 .35em;">
+                            style="margin: -.13em .35em 0 .35em;" target="_blank" rel="noopener noreferrer">
                             <img src="img/{{name}}.svg" alt="Link for {{name}} version" height="37">
                         </a>
                         {{/with}}
@@ -132,7 +141,7 @@
             <div class="optionsPanel" id="optionsContent">
                 <h2>Options</h2>
                 <div>
-                    <a href="{{otherLanguage.file}}">
+                    <a href="{{otherLanguage.file}}" target="_blank" rel="noopener noreferrer">
                         <p class="largeText">{{otherLanguage.name}}</p>
                     </a>
                 </div>
@@ -153,15 +162,16 @@
 
     <footer>
         <div class="credit">
-            <a target="_blank" href="https://icons8.com/icon/46171/cv">CV</a>
+            <a target="_blank" href="https://icons8.com/icon/46171/cv" target="_blank" rel="noopener noreferrer">CV</a>
             icon by
-            <a target="_blank" href="https://icons8.com">Icons8</a>
+            <a target="_blank" href="https://icons8.com" target="_blank" rel="noopener noreferrer">Icons8</a>
         </div>
 
         <div class="credit">
-            <a target="_blank" href="https://icons8.com/icon/100948/double-left">Double Left</a>
+            <a target="_blank" href="https://icons8.com/icon/100948/double-left" target="_blank"
+                rel="noopener noreferrer">Double Left</a>
             icon by
-            <a target="_blank" href="https://icons8.com">Icons8</a>
+            <a target="_blank" href="https://icons8.com" target="_blank" rel="noopener noreferrer">Icons8</a>
         </div>
 
     </footer>

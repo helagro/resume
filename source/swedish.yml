@@ -35,16 +35,18 @@ workExperienceItem:
 education: UTBILDNING
 educationItem:
   - title: Göteborgs Universitet
-    text: Software Engineering and Management
+    text: Software Engineering and Management.
+    resText: Rekommendationsbrev.
+    resLink: attachment/recomendation-letter-1.pdf
     time: 2022 — Nuvarande, Göteborg
   - title: Chalmers Tekniska Högskola
-    text: Informationsteknik
+    text: Informationsteknik.
     time: 2021 — 2021, Göteborg
   - title: Fria Läroverken
-    text: Teknik, Informations- och mediainriktning
+    text: 'Teknik, Informations- och mediainriktning. Snitt betyg: 18,96.'
     time: Augusti 2019 — Juni 2021, Kalmar
   - title: Jensen Gymnasieskola
-    text: Teknik, informationsinriktning
+    text: Teknik, informationsinriktning.
     time: Augusti 2018 — Juni 2019, Göteborg
 qualifications: KOMPETENS
 qualification:

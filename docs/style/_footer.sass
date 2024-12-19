@@ -1,0 +1,22 @@
+@use "_var"
+
+footer
+    position: fixed
+    left: 50%
+    margin-left: 3cm
+    z-index: 1
+    bottom: 1em
+    display: block
+    width: max-content
+
+    @media screen and (max-width: 21cm)
+        margin-left: 0
+        right: 10%
+        left: unset
+
+    .credit
+        *
+            position: relative
+
+        a
+            color: var.$strong-color

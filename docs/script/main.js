@@ -1,3 +1,10 @@
+function showPFP(value) {
+  document.getElementById('profilePic').style.display = value ? 'unset' : 'none'
+  document.getElementById('headerText').style.marginBottom = value ? '1em' : '0'
+}
+
+/* --------------------- CONTACT DETAILS -------------------- */
+
 const emailAddrScrambled = 'B0bydWYsVGavdXRsb29rLmNvbQ=='
 
 function loadContactDetails() {
@@ -25,11 +32,6 @@ function loadContactDetails() {
     phoneElem.textContent = phoneNr
     phoneElem.href = 'tel:' + phoneNr
   }
-}
-
-function showPFP(value) {
-  document.getElementById('profilePic').style.display = value ? 'unset' : 'none'
-  document.getElementById('headerText').style.marginBottom = value ? '1em' : '0'
 }
 
 /* --------------------- MOBILE OPTIONS --------------------- */

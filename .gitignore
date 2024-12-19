@@ -206,3 +206,4 @@ dist
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux,node,web
 
 .vscode
+docs/attachment/recomendation-letter-*.pdf

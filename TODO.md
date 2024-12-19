@@ -1,3 +1,3 @@
-- add letter of recommendation
 - improve phrasing
   - I handled and resolved a variety of equipment
+- os.sep

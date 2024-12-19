@@ -16,7 +16,6 @@ section
     grid-template-columns: var.$page-grid-division
     grid-template-rows: max-content max-content
     box-shadow: 0.1em 0.1em 0.5em var.$shadow-color
-    height: var.$page-height
     overflow: hidden
 
     //Makes the sidebar become a row on mobile
@@ -34,30 +33,27 @@ section
     @media screen and (max-width: 220mm)
         padding-right: 40px
 
-.pageContent
-    margin-left: var.$std-indent *0.2
-    margin-top: 1em
+    /* ---------------------- MAIN CONTENT ---------------------- */
 
-    a
-        color: var.$text-color
+    .leftColumn
 
-.profilePic
-    //Hide initially
-    display: none
+        .pageContent
+            margin-left: var.$std-indent *0.2
+            margin-top: 1em
 
-.infoItem
-    margin-bottom: 2em
-    margin-top: 1.5em
+            .infoItem
+                margin-bottom: 2em
+                margin-top: 1.5em
 
-// ========== SIDE CONTENT ===========
+    /* ---------------------- SIDE CONTENT ---------------------- */
 
-.rightColumn
-    div
-        margin-top: 2em
+    .rightColumn
+        div
+            margin-top: 2em
 
-        h2
-            color: var.$medium-gray
-
-        @media (max-width: var.$sidebar-to-row-size)
             h2
-                color: var.$light-gray
+                color: var.$medium-gray
+
+            @media (max-width: var.$sidebar-to-row-size)
+                h2
+                    color: var.$light-gray

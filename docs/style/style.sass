@@ -1,10 +1,10 @@
 @use "_var"
 @use "_text"
-@use "_options"
+@use "_menu"
 @use "_content"
 @use "_header"
 @use "_print"
-@use "_other"
+@use "_footer"
 
 *
     font-family: "EB Garamond"
@@ -28,8 +28,22 @@ label
 
 a
     text-decoration: none
+    color: var.$text-color
+
     &:hover
+        text-decoration: underline
+
+    &.importantLink
         text-decoration: underline
 
 input[type="checkbox"]
     accent-color: var.$strong-color
+
+.linkRow
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    justify-items: center
+    margin-top: 1.4em !important
+    justify-content: center
