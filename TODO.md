@@ -1,3 +1,6 @@
 - improve phrasing
   - I handled and resolved a variety of equipment
-- os.sep
+- handle mobile responsiveness
+- make even more useable
+  - make readme
+- add internship
