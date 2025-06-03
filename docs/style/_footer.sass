@@ -2,21 +2,31 @@
 
 footer
     position: fixed
+    right: 0
     left: 50%
-    margin-left: 3cm
+    transform: translateX(-50%)
     z-index: 1
     bottom: 1em
-    display: block
+    display: grid
     width: max-content
+    grid-template-columns: 1fr 1fr
+    gap: 2em
 
     @media screen and (max-width: 21cm)
-        margin-left: 0
-        right: 10%
-        left: unset
+        grid-template-columns: 1fr
+
+    a
+        color: var.$strong-color
+
+    .attachmentContainer
+
+        h3
+            text-align: center
+
+        ul
+            padding: 0
+            margin: 0
 
     .credit
         *
             position: relative
-
-        a
-            color: var.$strong-color

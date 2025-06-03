@@ -274,26 +274,34 @@ header .profilePic {
 }
 footer {
   position: fixed;
+  right: 0;
   left: 50%;
-  margin-left: 3cm;
+  transform: translateX(-50%);
   z-index: 1;
   bottom: 1em;
-  display: block;
+  display: grid;
   width: -moz-max-content;
   width: max-content;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
 }
 @media screen and (max-width: 21cm) {
   footer {
-    margin-left: 0;
-    right: 10%;
-    left: unset;
+    grid-template-columns: 1fr;
   }
+}
+footer a {
+  color: #2196F3;
+}
+footer .attachmentContainer h3 {
+  text-align: center;
+}
+footer .attachmentContainer ul {
+  padding: 0;
+  margin: 0;
 }
 footer .credit * {
   position: relative;
-}
-footer .credit a {
-  color: #2196F3;
 }
 
 * {
@@ -315,7 +323,7 @@ main {
   max-width: max-content;
   -moz-column-gap: 0.8em;
        column-gap: 0.8em;
-  padding-bottom: 3em;
+  padding-bottom: 4em;
 }
 
 label {

@@ -1,3 +1,5 @@
+
+# TODO
 - improve phrasing
   - I handled and resolved a variety of equipment
 - handle mobile responsiveness
