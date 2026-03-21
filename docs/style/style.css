@@ -2,81 +2,29 @@
 /* ------------------------- SPACING ------------------------ */
 /* ------------------------- COLORS ------------------------- */
 /* -------------------------- MEDIA ------------------------- */
-/* ------------------------- HEADERS ------------------------ */
-h1 {
-  color: #2196F3;
-  font-size: 2.2em;
-  margin-top: 0.4em;
-  margin-bottom: 0.1em;
-  letter-spacing: 0.06em;
-  font-weight: 500;
-}
-
-h2 {
-  color: #818181;
-  font-size: 1.1em;
-  line-height: 1.3em;
-  font-weight: 100;
-  letter-spacing: 0.08em;
-}
-
-h3 {
-  color: #3a3a3a;
-  font-size: 1.15em;
-  line-height: 0.3em;
-  font-weight: 500;
-}
-
-/* ---------------------- MAIN CONTENT ---------------------- */
-.bodyText {
-  color: #1b1b1b;
-  font-size: 0.9em;
-}
-
-/* ------------------------ INFO TEXT ----------------------- */
-.largeText {
-  color: #1b1b1b;
-  font-size: 1rem;
-  margin: 0.6em 0;
-}
-
-.mediumText {
-  color: #3a3a3a;
-  font-size: 0.9em;
-  line-height: 0.5em;
-}
-
-.smallText {
-  color: #818181;
-  line-height: 0.5em;
-  font-size: 0.8em;
-}
-
-/* -------------------------- LINKS ------------------------- */
-a.disabled {
-  pointer-events: none;
-  text-decoration: none;
-}
-
-.optionsPanel {
-  padding: 0.2em 2em 2em 1em;
+.optionsPanelContainer .optionsPanel {
+  padding: 0.2em 0 0 1em;
   height: -moz-min-content;
   height: min-content;
-  margin-top: 3em;
+  display: grid;
+  top: 3rem;
   grid-template-columns: auto;
-  border-radius: 0.2em;
+  border-radius: 0.4em 0 0 0.4em;
   display: none;
+  align-content: start;
   position: fixed;
 }
-.optionsPanel * {
+.optionsPanelContainer .optionsPanel * {
   margin-top: 0.1em;
   margin-bottom: 0.1em;
+  height: -moz-min-content;
+  height: min-content;
 }
-.optionsPanel h2 {
+.optionsPanelContainer .optionsPanel h2 {
   color: #1b1b1b;
   margin-bottom: 0.4em;
 }
-.optionsPanel button {
+.optionsPanelContainer .optionsPanel button {
   background: none;
   border: none;
   padding: 0;
@@ -88,19 +36,18 @@ a.disabled {
   height: min-content;
 }
 @media (max-width: 30em) {
-  .optionsPanel #showImages, .optionsPanel #showImagesLabel {
+  .optionsPanelContainer .optionsPanel #showImages, .optionsPanelContainer .optionsPanel #showImagesLabel {
     cursor: not-allowed;
     opacity: 0.3;
   }
 }
-
-#toggleOptionsBtn {
+.optionsPanelContainer #toggleOptionsBtn {
   background-color: #e3e3e3;
   border: none;
   padding: 0.7em;
   position: fixed;
   right: 0em;
-  top: 4em;
+  top: 3rem;
   z-index: 5;
 }
 
@@ -113,14 +60,14 @@ a.disabled {
 @media screen and (max-width: 30cm) {
   .optionsPanelContainer {
     position: fixed;
-    right: 0;
     width: 10em;
     z-index: 4;
   }
   .optionsPanel {
+    right: 0;
     background-color: #e3e3e3;
     z-index: 4;
-    padding: 1.6em;
+    padding: 1.6em 1.4em !important;
     box-shadow: 0.05em 0.05em 0.2em #bdbdbd;
   }
 }
@@ -135,6 +82,41 @@ a.disabled {
     display: none;
   }
 }
+footer {
+  position: fixed;
+  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  bottom: 1em;
+  display: grid;
+  width: -moz-max-content;
+  width: max-content;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+@media screen and (max-width: 42em) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
+footer a {
+  color: #2196F3;
+}
+footer .attachmentContainer * {
+  position: relative;
+}
+footer .attachmentContainer h3 {
+  text-align: center;
+}
+footer .attachmentContainer ul {
+  padding: 0;
+  margin: 0;
+}
+footer .credit * {
+  position: relative;
+}
+
 section {
   z-index: 2;
   max-width: 210mm;
@@ -152,8 +134,6 @@ section {
   grid-template-rows: max-content max-content;
   box-shadow: 0.1em 0.1em 0.5em #bdbdbd;
   overflow: hidden;
-  /* ---------------------- MAIN CONTENT ---------------------- */
-  /* ---------------------- SIDE CONTENT ---------------------- */
 }
 @media (max-width: 42em) {
   section {
@@ -173,6 +153,9 @@ section {
     padding-right: 40px;
   }
 }
+section {
+  /* ---------------------- MAIN CONTENT ---------------------- */
+}
 section .leftColumn .pageContent {
   margin-left: 0.12em;
   margin-top: 1em;
@@ -180,6 +163,9 @@ section .leftColumn .pageContent {
 section .leftColumn .pageContent .infoItem {
   margin-bottom: 2em;
   margin-top: 1.5em;
+}
+section {
+  /* ---------------------- SIDE CONTENT ---------------------- */
 }
 section .rightColumn div {
   margin-top: 2em;
@@ -237,6 +223,64 @@ header .profilePic {
   margin-top: 0.7em;
 }
 
+/* ------------------------- HEADERS ------------------------ */
+h1 {
+  color: #2196F3;
+  font-size: 2.2em;
+  margin-top: 0.4em;
+  margin-bottom: 0.1em;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+h2 {
+  color: #818181;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  font-weight: 100;
+  letter-spacing: 0.08em;
+}
+
+h3 {
+  color: #3a3a3a;
+  font-size: 1.15em;
+  line-height: 1em;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ---------------------- MAIN CONTENT ---------------------- */
+.bodyText {
+  color: #1b1b1b;
+  font-size: 0.9em;
+  margin: 0.7em 0;
+}
+
+/* ------------------------ INFO TEXT ----------------------- */
+.largeText {
+  color: #1b1b1b;
+  font-size: 1rem;
+  margin: 0.6em 0;
+}
+
+.mediumText {
+  color: #3a3a3a;
+  font-size: 0.9em;
+  line-height: 0.5em;
+}
+
+.smallText {
+  color: #818181;
+  line-height: 0.5em;
+  font-size: 0.8em;
+}
+
+/* -------------------------- LINKS ------------------------- */
+a.disabled {
+  pointer-events: none;
+  text-decoration: none;
+}
+
 .printOnly {
   display: none;
 }
@@ -265,45 +309,13 @@ header .profilePic {
     max-width: 100%;
     margin: 0;
   }
-  .credit {
-    display: none;
-  }
   .printOnly {
     display: block;
   }
-}
-footer {
-  position: fixed;
-  right: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  bottom: 1em;
-  display: grid;
-  width: -moz-max-content;
-  width: max-content;
-  grid-template-columns: 1fr 1fr;
-  gap: 2em;
-}
-@media screen and (max-width: 21cm) {
   footer {
-    grid-template-columns: 1fr;
+    display: none !important;
   }
 }
-footer a {
-  color: #2196F3;
-}
-footer .attachmentContainer h3 {
-  text-align: center;
-}
-footer .attachmentContainer ul {
-  padding: 0;
-  margin: 0;
-}
-footer .credit * {
-  position: relative;
-}
-
 * {
   font-family: "EB Garamond";
 }
@@ -324,6 +336,11 @@ main {
   -moz-column-gap: 0.8em;
        column-gap: 0.8em;
   padding-bottom: 4em;
+}
+@media screen and (max-width: 42em) {
+  main {
+    padding-bottom: 7em;
+  }
 }
 
 label {

@@ -24,29 +24,42 @@ workExperienceItem:
       responsibilities as key fob manager and IT support. The support involved installation
       and troubleshooting for computers, and connected devices.
     time: April 2022 — August 2022, Danderyd
-  - title: Shop Assistant
-    company: Ica Stillingsön
-    companyLink: https://www.ica.se/butiker/nara/orust/stillingsons-handel-1003402/
-    text: Cashier service and store maintenance.
-    time: June 2020 — July 2020, June 2019 — July 2019, Orust
+  # - title: Shop Assistant
+  #   company: Ica Stillingsön
+  #   companyLink: https://www.ica.se/butiker/nara/orust/stillingsons-handel-1003402/
+  #   text: Cashier service and store maintenance.
+  #   time: June 2020 — July 2020, June 2019 — July 2019, Orust
   # - title: Leisure Assistant, Orust Municipality
   #   time: June 2018 — July 2018, Ellös
 education: EDUCATION
 educationItem:
+  - title: Chalmers University of Technology
+    text: MSc in Computer Science.
+    time: 2025 — Present, Gothenburg
   - title: University of Gothenburg
     text: Software Engineering and Management.
     resText: Letter of recommendation.
     resLink: attachment/recomendation-letter-1.pdf
-    time: 2022 — Present, Gothenburg
-  - title: Chalmers University of Technology
-    text: Information Technology.
-    time: 2021 — 2021, Gothenburg
-  - title: Fria Läroverken
-    text: 'Technology, Information and Media. Average grade: 18.96.'
-    time: August 2019 — June 2021, Kalmar
+    time: 2022 — 2025, Gothenburg
+  # - title: Chalmers University of Technology
+  #   text: Information Technology.
+  #   time: 2021 — 2021, Gothenburg
+  - title: Fria Läroverken & Jensen Gymnasium
+    text: High School Diploma in Technology & Media.
+    time: 2018 — 2021, Kalmar & Gothenburg
   - title: Jensen Gymnasieskola
     text: Technology, Information.
     time: August 2018 — June 2019, Gothenburg
+internship: INTERNSHIPS
+internshipItem:
+  - title: Software Engineer Intern
+    company: Ludilo
+    companyLink: https://www.volvocars.com/
+    text:
+      As a software engineer intern, I was responsible for developing and maintaining
+      software applications. I worked closely with the development team to design and implement
+      new features, as well as troubleshoot and resolve issues in existing applications.
+    time: June 2024 — August 2024, Gothenburg
 qualifications: QUALIFICATIONS
 qualification:
   - Programming

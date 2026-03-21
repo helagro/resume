@@ -1,8 +1,11 @@
+- live server on docs
+- run `npm run build` between
+- watch sass
+
 
 # TODO
 - improve phrasing
   - I handled and resolved a variety of equipment
-- handle mobile responsiveness
-- make even more useable
-  - make readme
+
+- add diploma
 - add internship

@@ -25,25 +25,28 @@ workExperienceItem:
       uppgifterna rörde sig kring installation och felsökning av mjukvara, datorer samt
       enheter kopplade till dem. Ett annat större ansvarsområde var hantering av nyckelbrickor.
     time: April 2022 — Augusti 2022, Danderyd
-  - title: Butiksbiträde
-    company: Ica Stillingsön
-    companyLink: https://www.ica.se/butiker/nara/orust/stillingsons-handel-1003402/
-    text: Kassaarbete och butiksunderhåll.
-    time: Juni 2019 — Juli 2019, Juni 2020 — Juli 2020, Orust
+  # - title: Butiksbiträde
+  #   company: Ica Stillingsön
+  #   companyLink: https://www.ica.se/butiker/nara/orust/stillingsons-handel-1003402/
+  #   text: Kassaarbete och butiksunderhåll.
+  #   time: Juni 2019 — Juli 2019, Juni 2020 — Juli 2020, Orust
   # - title: Fritidsassistent, Orust Kommun
   #   time: Juni 2018 — Juli 2018, Ellös
 education: UTBILDNING
 educationItem:
+  - title: Chalmers Tekniska Högskola
+    text: Masterprogram i datavetenskap.
+    time: 2025 — pågående, Göteborg
   - title: Göteborgs Universitet
     text: Software Engineering and Management.
     resText: Rekommendationsbrev.
     resLink: attachment/recomendation-letter-1.pdf
-    time: 2022 — Nuvarande, Göteborg
-  - title: Chalmers Tekniska Högskola
-    text: Informationsteknik.
-    time: 2021 — 2021, Göteborg
+    time: 2022 — 2025, Göteborg
+  # - title: Chalmers Tekniska Högskola
+  #   text: Informationsteknik.
+  #   time: 2021 — 2021, Göteborg
   - title: Fria Läroverken
-    text: 'Teknik, Informations- och mediainriktning. Snitt betyg: 18,96.'
+    text: Teknik, Informations- och mediainriktning.
     time: Augusti 2019 — Juni 2021, Kalmar
   - title: Jensen Gymnasieskola
     text: Teknik, informationsinriktning.

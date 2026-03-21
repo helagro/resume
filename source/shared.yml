@@ -18,8 +18,6 @@ techniqueItem:
     link: https://github.com/helagro?tab=repositories&q=&type=&language=kotlin&sort=
   - name: MongoDB
     link:
-  - name: Postman
-    link:
   - name: Python
     link: https://github.com/helagro?tab=repositories&q=&type=&language=python&sort=
   - name: SQL

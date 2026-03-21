@@ -1,44 +1,49 @@
-@use "var"
+@use "general/_var"
 
-.optionsPanel
-    padding: 0.2em 2em 2em 1em
-    height: min-content
-    margin-top: 3em
-    grid-template-columns: auto
-    border-radius: 0.2em
-    display: none
-    position: fixed
+.optionsPanelContainer
 
-    *
-        margin-top: 0.1em
-        margin-bottom: 0.1em
-
-    h2
-        color: var.$dark-gray
-        margin-bottom: 0.4em
-
-    button
-        background: none
-        border: none
-        padding: 0
-        text-decoration: underline
-        cursor: pointer
-        width: max-content
+    .optionsPanel
+        padding: 0.2em 0 0 1em
         height: min-content
+        display: grid
+        top: 3rem
+        grid-template-columns: auto
+        border-radius: 0.4em 0 0 0.4em
+        display: none
+        align-content: start
+        position: fixed
 
-    #showImages, #showImagesLabel
-        @media (max-width: var.$pfp-min-screen-width)
-            cursor: not-allowed
-            opacity: 0.3
+        *
+            margin-top: 0.1em
+            margin-bottom: 0.1em
+            height: min-content
 
-#toggleOptionsBtn
-    background-color: var.$options-background
-    border: none
-    padding: 0.7em
-    position: fixed
-    right: 0em
-    top: 4em
-    z-index: 5
+        h2
+            color: var.$dark-gray
+            margin-bottom: 0.4em
+
+        button
+            background: none
+            border: none
+            padding: 0
+            text-decoration: underline
+            cursor: pointer
+            width: max-content
+            height: min-content
+
+        #showImages, #showImagesLabel
+            @media (max-width: var.$pfp-min-screen-width)
+                cursor: not-allowed
+                opacity: 0.3
+
+    #toggleOptionsBtn
+        background-color: var.$options-background
+        border: none
+        padding: 0.7em
+        position: fixed
+        right: 0em
+        top: 3rem
+        z-index: 5
 
 /* ---------------------- MEDIA QUERIES --------------------- */
 
@@ -50,14 +55,14 @@
 @media screen and (max-width: var.$options-media-screen-width)
     .optionsPanelContainer
         position: fixed
-        right: 0
         width: 10em
         z-index: 4
 
     .optionsPanel
+        right: 0
         background-color: var.$options-background
         z-index: 4
-        padding: 1.6em
+        padding: 1.6em 1.4em !important
         box-shadow: 0.05em 0.05em 0.2em var.$shadow-color
 
 //Display options menu on computer

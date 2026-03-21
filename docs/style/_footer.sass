@@ -1,4 +1,4 @@
-@use "_var"
+@use "general/_var"
 
 footer
     position: fixed
@@ -12,13 +12,15 @@ footer
     grid-template-columns: 1fr 1fr
     gap: 2em
 
-    @media screen and (max-width: 21cm)
+    @media screen and (max-width: var.$sidebar-to-row-size)
         grid-template-columns: 1fr
 
     a
         color: var.$strong-color
 
     .attachmentContainer
+        *
+            position: relative
 
         h3
             text-align: center

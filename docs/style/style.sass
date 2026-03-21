@@ -1,10 +1,12 @@
-@use "_var"
-@use "_text"
 @use "_menu"
-@use "_content"
-@use "_header"
-@use "_print"
 @use "_footer"
+
+@use "page/_content"
+@use "page/_header"
+
+@use "general/_var"
+@use "general/_text"
+@use "general/_print"
 
 *
     font-family: "EB Garamond"
@@ -22,6 +24,9 @@ main
     max-width: max-content
     column-gap: 0.8em
     padding-bottom: 4em
+
+    @media screen and (max-width: var.$sidebar-to-row-size)
+        padding-bottom: 7em
 
 label
     user-select: none
