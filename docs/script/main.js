@@ -3,6 +3,10 @@ function showPFP(value) {
   document.getElementById('headerText').style.marginBottom = value ? '1em' : '0'
 }
 
+function showPageMarkers(value) {
+  document.getElementById('pageMarkers').style.display = value ? 'grid' : 'none'
+}
+
 /* --------------------- CONTACT DETAILS -------------------- */
 
 const emailAddrScrambled = 'B0bydWYsVGavdXRsb29rLmNvbQ=='
@@ -14,7 +18,7 @@ function loadContactDetails() {
         .slice(0, Math.floor(s.length / 2.5))
         .split('')
         .reverse()
-        .join('') + s.slice(Math.floor(s.length / 2.5))
+        .join('') + s.slice(Math.floor(s.length / 2.5)),
     )
 
   const emailAddr = unscramble(emailAddrScrambled)

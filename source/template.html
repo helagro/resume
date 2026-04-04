@@ -14,6 +14,18 @@
     <main>
         <div class="pages">
 
+            <div class="pageMarkers" id="pageMarkers">
+                <div class="pageMarkerPair">
+                    <h4 class="pageMarkerLabel">A4</h4>
+                    <div class="pageMarker" id="pageMarkerA4"></div>
+                </div>
+
+                <div class="pageMarkerPair">
+                    <h4 class="pageMarkerLabel">A5</h4>
+                    <div class="pageMarker" id="pageMarkerA5"></div>
+                </div>
+            </div>
+
             <!-- ---------------------- PAGE ONE ----------------------- -->
 
             <section>
@@ -147,14 +159,26 @@
                         <p class="largeText">{{otherLanguage.name}}</p>
                     </a>
                 </div>
+
+                <button onclick="print()">
+                    <p class="largeText">Print</p>
+                </button>
+
+                <div style="height: 0.4em"></div>
+
                 <p class="showImageCheck">
                     <label for="showImages"><span class="largeText" id="showImagesLabel">Show Image</span></label>
                     <input type="checkbox" name="showImages" id="showImages" autocomplete="off"
                         onchange="showPFP(this.checked)">
                 </p>
-                <button onclick="print()">
-                    <p class="largeText">Print</p>
-                </button>
+
+                <p class="showImageCheck">
+                    <label for="showMarkings"><span class="largeText" id="showMarkingsLabel">Show
+                            Markings</span></label>
+                    <input type="checkbox" name="showMarkings" id="showMarkings" autocomplete="off"
+                        onchange="showPageMarkers(this.checked)">
+                </p>
+
             </div>
         </div>
 

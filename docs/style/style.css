@@ -105,6 +105,7 @@ footer a {
 }
 footer ul {
   margin: 0;
+  padding-left: 1em;
   list-style-type: disc;
 }
 footer ul li::marker {
@@ -316,6 +317,43 @@ a.disabled {
     display: block;
   }
   footer {
+    display: none !important;
+  }
+}
+.pageMarkers {
+  position: absolute;
+  margin-top: 1em;
+  margin-left: -7em;
+  width: 3em;
+  display: none;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+}
+.pageMarkers .pageMarkerPair {
+  display: grid;
+  grid-template-columns: 1fr 1em;
+  width: 100%;
+}
+.pageMarkers .pageMarkerPair .pageMarkerLabel {
+  width: 2em;
+  color: #aaa;
+  margin-top: 95mm;
+}
+.pageMarkers .pageMarkerPair .pageMarker {
+  border: 1px solid #aaa;
+  border-right: none;
+}
+.pageMarkers .pageMarkerPair #pageMarkerA4 {
+  height: 297mm;
+  max-height: 297mm;
+}
+.pageMarkers .pageMarkerPair #pageMarkerA5 {
+  height: 210mm;
+  max-height: 210mm;
+}
+
+@media print {
+  .pageMarkers {
     display: none !important;
   }
 }
