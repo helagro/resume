@@ -324,7 +324,7 @@ a.disabled {
 .pageMarkers {
   position: absolute;
   margin-top: 1em;
-  margin-left: -7em;
+  margin-left: -6.8em;
   width: 3em;
   display: none;
   grid-auto-flow: column;
@@ -336,7 +336,9 @@ a.disabled {
   width: 100%;
 }
 .pageMarkers .pageMarkerPair .pageMarkerLabel {
-  width: 2em;
+  width: 1.4em;
+  text-align: right;
+  padding-right: 0.4em;
   color: #aaa;
   margin-top: 95mm;
 }

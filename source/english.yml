@@ -47,19 +47,11 @@ educationItem:
   - title: Fria Läroverken & Jensen Gymnasium
     text: High School Diploma in Technology & Media.
     time: 2018 — 2021, Kalmar & Gothenburg
-  - title: Jensen Gymnasieskola
-    text: Technology, Information.
-    time: August 2018 — June 2019, Gothenburg
 internship: INTERNSHIPS
 internshipItem:
-  - title: Software Engineer Intern
-    company: Ludilo
-    companyLink: https://www.volvocars.com/
-    text:
-      As a software engineer intern, I was responsible for developing and maintaining
-      software applications. I worked closely with the development team to design and implement
-      new features, as well as troubleshoot and resolve issues in existing applications.
-    time: June 2024 — August 2024, Gothenburg
+  - title: Software Engineer Intern #, Ludilo
+    text: Todo
+    time: July 2025 — August 2025, Gothenburg # TODO - Double check
 qualifications: QUALIFICATIONS
 qualification:
   - Programming
