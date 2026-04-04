@@ -165,8 +165,8 @@ section .leftColumn .pageContent {
   margin-top: 1em;
 }
 section .leftColumn .pageContent .infoItem {
-  margin-bottom: 2em;
-  margin-top: 1.5em;
+  margin-bottom: 1.6em;
+  margin-top: 1em;
 }
 section {
   /* ---------------------- SIDE CONTENT ---------------------- */
@@ -240,7 +240,8 @@ h1 {
 h2 {
   color: #818181;
   font-size: 1.1em;
-  line-height: 1.3em;
+  line-height: 1.1em;
+  margin: 0.4em 0;
   font-weight: 100;
   letter-spacing: 0.08em;
 }
