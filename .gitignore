@@ -195,7 +195,6 @@ dist
 *.css
 *.htm
 *.html
-*.js
 *.jsp
 *.php
 *.rss
@@ -207,3 +206,4 @@ dist
 
 .vscode
 docs/attachment/recomendation-letter-*.pdf
+env.js

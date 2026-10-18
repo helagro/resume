@@ -1,28 +1,38 @@
 ---
-techniqueItem:
+developmentItem:
+  - name: React Native
+    link:
   - name: Android
     link:
-  - name: C
-    link: https://github.com/helagro?tab=repositories&q=&type=&language=c&sort=
-  - name: C++
-    link: https://github.com/helagro?tab=repositories&q=&type=&language=c%2B%2B&sort=
   - name: Flutter
+    link:
+  - name: Vue
     link:
   - name: HTML & CSS
     link:
+
+systemItem:
+  - name: Azure
+    link:
+  - name: Docker & Kubernetes
+    link:
+  - name: Linux
+    link:
+  - name: Google Cloud
+    link:
+
+languageItem:
   - name: Java
     link: https://github.com/helagro?tab=repositories&q=&type=&language=java&sort=
-  - name: JavaScript
-    link: https://github.com/helagro?tab=repositories&q=&type=&language=javascript&sort=
-  - name: Kotlin
-    link: https://github.com/helagro?tab=repositories&q=&type=&language=kotlin&sort=
-  - name: MongoDB
-    link:
+  - name: TypeScript
+    link: https://github.com/helagro?tab=repositories&q=&type=&language=typescript&sort=
+  - name: C++
+    link: https://github.com/helagro?tab=repositories&q=&type=&language=c%2B%2B&sort=
   - name: Python
     link: https://github.com/helagro?tab=repositories&q=&type=&language=python&sort=
+  - name: C
+    link: https://github.com/helagro?tab=repositories&q=&type=&language=c&sort=
+  - name: Kotlin
+    link: https://github.com/helagro?tab=repositories&q=&type=&language=kotlin&sort=
   - name: SQL
-    link:
-  - name: Typescript
-    link: https://github.com/helagro?tab=repositories&q=&type=&language=typescript&sort=
-  - name: Vue
     link:

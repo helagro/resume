@@ -8,8 +8,10 @@ function showPageMarkers(value) {
 }
 
 /* --------------------- CONTACT DETAILS -------------------- */
+const phoneNrScrambled = window.env.phoneNrScrambled
+const emailAddrScrambled = window.env.emailAddrScrambled
 
-const emailAddrScrambled = 'B0bydWYsVGavdXRsb29rLmNvbQ=='
+console.log(window.env.emailAddrScrambled, emailAddrScrambled)
 
 function loadContactDetails() {
   const unscramble = (s) =>
@@ -27,7 +29,7 @@ function loadContactDetails() {
   emailElem.textContent = emailAddr
   emailElem.href = 'mailto:' + emailAddr
 
-  if (typeof phoneNrScrambled === 'undefined') {
+  if (!phoneNrScrambled) {
     for (const elem of document.getElementsByClassName('ifPhoneNr'))
       elem.style.display = 'none'
   } else {

@@ -1,28 +1,42 @@
 ---
-pageTitle: Rèsumè
+pageTitle: Résumé
 profile: PROFILE
-profileText:
-  I have extensive experience in IT support as an IT technician at Amplius
-  Field Service Group AB and as a laboratory assistant at ALS Danderyd. Currently,
-  I am studying Software Engineering and Management at the University of Gothenburg.
+profileText: Computer Science master's student at Chalmers University of Technology, holding a bachelor's degree in Software Engineering and Management from the University of Gothenburg. Experienced in IT support and troubleshooting, with additional experience in cloud computing and mobile application development.
+
+education: EDUCATION
+educationItem:
+  - title: Chalmers University of Technology
+    text: MSc in Computer Science - Algorithms, Languages and Logic, with elective coursework in cybersecurity, operating systems, and formal verification.
+    time: 2025 — Present, Gothenburg
+  - title: University of Gothenburg
+    text: BSc in Software Engineering and Management, with elective coursework in mathematics and artificial intelligence.
+    resText: Letter of recommendation.
+    resLink: attachment/recomendation-letter-1.pdf
+    time: 2022 — 2025, Gothenburg
+  # - title: Chalmers University of Technology
+  #   text: Information Technology.
+  #   time: 2021 — 2021, Gothenburg
+  # - title: Fria Läroverken & Jensen Gymnasium
+  #   text: High School Diploma in Technology & Media.
+  #   time: 2018 — 2021, Kalmar & Gothenburg
+
 workExperience: WORK EXPERIENCE
 workExperienceItem:
   - title: IT Technician
     company: Amplius Field Service Group AB
     companyLink: https://amplius.se/
     text:
-      As an IT technician, I was responsible for providing technical support and
-      service to various clients. My role involved extensive fieldwork where I handled
-      and resolved issues with variety of equipment, including Cisco devices, POS devices,
-      and computers.
-    time: August 2022 — Present
+      Provided on-site IT support and troubleshooting for multiple clients, working with Cisco networking equipment, point-of-sale systems, and computers.
+      Diagnosed technical issues and performed hardware and software maintenance.
+    time: August 2022 — Present (on-demand, part-time)
+  - title: Software Engineer Intern
+    company: Ludilo
+    text: Managed Microsoft Azure and developed a React Native mobile application at Ludilo, an app development startup.
+    time: July 2025 — August 2025, Gothenburg
   - title: Laboratory Assistant
     company: ALS Danderyd
     companyLink: https://www.alsglobal.se/
-    text:
-      Responsible for preparing for and cleaning up after analysis. I also had additional
-      responsibilities as key fob manager and IT support. The support involved installation
-      and troubleshooting for computers, and connected devices.
+    text: Prepared for and cleaned up after laboratory analyses, managed key fob access, and provided IT support, including computer installation and troubleshooting of connected devices.
     time: April 2022 — August 2022, Danderyd
   # - title: Shop Assistant
   #   company: Ica Stillingsön
@@ -31,38 +45,30 @@ workExperienceItem:
   #   time: June 2020 — July 2020, June 2019 — July 2019, Orust
   # - title: Leisure Assistant, Orust Municipality
   #   time: June 2018 — July 2018, Ellös
-education: EDUCATION
-educationItem:
-  - title: Chalmers University of Technology
-    text: MSc in Computer Science.
-    time: 2025 — Present, Gothenburg
-  - title: University of Gothenburg
-    text: Software Engineering and Management.
-    resText: Letter of recommendation.
-    resLink: attachment/recomendation-letter-1.pdf
-    time: 2022 — 2025, Gothenburg
-  # - title: Chalmers University of Technology
-  #   text: Information Technology.
-  #   time: 2021 — 2021, Gothenburg
-  - title: Fria Läroverken & Jensen Gymnasium
-    text: High School Diploma in Technology & Media.
-    time: 2018 — 2021, Kalmar & Gothenburg
-internship: INTERNSHIPS
-internshipItem:
-  - title: Software Engineer Intern #, Ludilo
-    text: Todo
-    time: July 2025 — August 2025, Gothenburg # TODO - Double check
-qualifications: QUALIFICATIONS
-qualification:
-  - Programming
-  - IT service
-  - Web design
-  - Fluent in English
-  - Experience in image and video editing
-  - Proficient in Excel
-techniques: TECHNIQUES
+
+project: PROJECTS
+projectItem:
+  - title: Bachelor Thesis - Treqs VS Code Extension
+    link: https://gitlab.com/treqs-on-git/treqs-vscode
+    text: A Visual Studio Code extension for the T-Reqs requirements management tool, featuring a language server, editable PlantUML diagrams, and an interactive graphical interface.
+  - title: Bank Fraud Detection
+    link: https://github.com/jnsltk/fraud_detection
+    text: An AI fraud detection application that relies on the power of DNNs to classify transactions as fraudulent or non-fraudulent based on the transactions features.
+
+domains: DOMAINS
+domainItem:
+  - Software Development
+  - Cybersecurity
+  - Artificial Intelligence
+  - Formal Verification
+  - IT Support and Troubleshooting
+
+development: DEVELOPMENT
+systems: SYSTEMS
+languages: LANGUAGES
+
 otherLanguage:
   name: Svenska
   file: se.html
 highSchoolCourses: High school courses
-bachelorDegree: Bachelor degree
+bachelorDegree: Bachelor's degree

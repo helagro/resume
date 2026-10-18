@@ -128,7 +128,7 @@ section {
   box-sizing: border-box;
   min-height: 297mm;
   margin: 1em 0;
-  padding: 2em 2em 1em 2em;
+  padding: 1em 2em 1em 3.5em;
   background-color: #fff;
   position: relative;
   display: grid;
@@ -223,8 +223,8 @@ header .profilePic {
 }
 .columns .columnDivider {
   border-right: 0.1em solid #818181;
-  height: 50%;
-  margin-top: 0.7em;
+  height: 75%;
+  margin-top: 0.2em;
 }
 
 /* ------------------------- HEADERS ------------------------ */
@@ -238,11 +238,11 @@ h1 {
 }
 
 h2 {
-  color: #818181;
+  color: #005eab;
   font-size: 1.1em;
   line-height: 1.1em;
-  margin: 0.4em 0;
-  font-weight: 100;
+  margin: 0.6em 0 0.4em 0;
+  font-weight: 500;
   letter-spacing: 0.08em;
 }
 
@@ -258,6 +258,7 @@ h3 {
 .bodyText {
   color: #1b1b1b;
   font-size: 0.9em;
+  line-height: 1.2em;
   margin: 0.7em 0;
 }
 

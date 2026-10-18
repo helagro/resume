@@ -1,65 +1,70 @@
 ---
 pageTitle: CV
 profile: PROFIL
-profileText:
-  Jag har bred erfarenhet inom IT-support som IT-tekniker hos Amplius Field
-  Service Group AB och som laboratorieassistent på ALS Danderyd. För närvarande studerar
-  jag Software Engineering and Management vid Göteborgs Universitet.
+profileText: Masterstudent i datavetenskap vid Chalmers tekniska högskola med en kandidatexamen i Software Engineering and Management från Göteborgs universitet. Erfarenhet av IT-support, felsökning och molntjänster samt utveckling av mobilapplikationer.
+
+education: UTBILDNING
+educationItem:
+  - title: Chalmers tekniska högskola
+    text: Masterprogram i datavetenskap - algoritmer, språk och logik, med valbara kurser inom cybersäkerhet, operativsystem och formell verifiering.
+    time: 2025 — Pågående, Göteborg
+  - title: Göteborgs universitet
+    text: Kandidatexamen i Software Engineering and Management, med valbara kurser inom matematik och artificiell intelligens.
+    resText: Rekommendationsbrev.
+    resLink: attachment/recomendation-letter-1.pdf
+    time: 2022 — 2025, Göteborg
+  # - title: Chalmers tekniska högskola
+  #   text: Informationsteknik.
+  #   time: 2021 — 2021, Göteborg
+  # - title: Fria Läroverken & Jensen Gymnasium
+  #   text: Gymnasieexamen inom teknik och media.
+  #   time: 2018 — 2021, Kalmar och Göteborg
+
 workExperience: ARBETSLIVSERFARENHET
 workExperienceItem:
   - title: IT-tekniker
     company: Amplius Field Service Group AB
     companyLink: https://amplius.se/
-    text:
-      'Som IT-tekniker ansvarade jag för att tillhandahålla teknisk support och
-      service till olika klienter. Min roll innefattade omfattande fältarbete där jag
-      hanterade och löste en mångfald av utrustningar, inklusive Cisco-enheter, POS-enheter
-      och datorer. '
-    time: Augusti 2022 — Nuvarande
+    text: Tillhandahöll IT-support och felsökning på plats hos flera kunder. Arbetade med nätverksutrustning från Cisco, kassasystem och datorer. Diagnostiserade tekniska problem och utförde underhåll av hård- och mjukvara.
+    time: Augusti 2022 — Pågående (vid behov, deltid)
+  - title: Mjukvaruutvecklare (praktikant)
+    company: Ludilo
+    text: Hanterade Microsoft Azure och utvecklade en mobilapplikation i React Native på Ludilo, ett startupföretag inom apputveckling.
+    time: Juli 2025 — Augusti 2025, Göteborg
   - title: Laboratorieassistent
     company: ALS Danderyd
     companyLink: https://www.alsglobal.se/
-    text:
-      Ansvarig för förberedelse av jordprover för analys och genomförande av städning
-      och kassering efter analys. Jag hade även ett extra ansvar som IT support, där
-      uppgifterna rörde sig kring installation och felsökning av mjukvara, datorer samt
-      enheter kopplade till dem. Ett annat större ansvarsområde var hantering av nyckelbrickor.
+    text: Förberedde inför och städade efter laboratorieanalyser, ansvarade för hantering av passerkort och gav IT-support, inklusive installation av datorer och felsökning av anslutna enheter.
     time: April 2022 — Augusti 2022, Danderyd
-  # - title: Butiksbiträde
-  #   company: Ica Stillingsön
+  # - title: Butiksmedarbetare
+  #   company: ICA Stillingsön
   #   companyLink: https://www.ica.se/butiker/nara/orust/stillingsons-handel-1003402/
-  #   text: Kassaarbete och butiksunderhåll.
-  #   time: Juni 2019 — Juli 2019, Juni 2020 — Juli 2020, Orust
-  # - title: Fritidsassistent, Orust Kommun
+  #   text: Kassaarbete och underhåll av butiken.
+  #   time: Juni 2020 — Juli 2020, Juni 2019 — Juli 2019, Orust
+  # - title: Fritidsassistent, Orust kommun
   #   time: Juni 2018 — Juli 2018, Ellös
-education: UTBILDNING
-educationItem:
-  - title: Chalmers Tekniska Högskola
-    text: Masterprogram i datavetenskap.
-    time: 2025 — pågående, Göteborg
-  - title: Göteborgs Universitet
-    text: Software Engineering and Management.
-    resText: Rekommendationsbrev.
-    resLink: attachment/recomendation-letter-1.pdf
-    time: 2022 — 2025, Göteborg
-  # - title: Chalmers Tekniska Högskola
-  #   text: Informationsteknik.
-  #   time: 2021 — 2021, Göteborg
-  - title: Fria Läroverken
-    text: Teknik, Informations- och mediainriktning.
-    time: Augusti 2019 — Juni 2021, Kalmar
-  - title: Jensen Gymnasieskola
-    text: Teknik, informationsinriktning.
-    time: Augusti 2018 — Juni 2019, Göteborg
-qualifications: KOMPETENS
-qualification:
-  - Programmering
-  - IT-service
-  - Webdesign
-  - Flytande engelska
-  - Erfarenhet inom bild och videoredigering
-  - Kunnig inom excel
-techniques: TEKNIKER
+
+project: PROJEKT
+projectItem:
+  - title: Kandidatuppsats - T-Reqs-tillägg för VS Code
+    link: https://gitlab.com/treqs-on-git/treqs-vscode
+    text: Ett tillägg till Visual Studio Code för kravhanteringsverktyget T-Reqs, med en språkserver, redigerbara PlantUML-diagram och ett interaktivt grafiskt gränssnitt.
+  - title: Bedrägeridetektion inom banksektorn
+    link: https://github.com/jnsltk/fraud_detection
+    text: En AI-baserad applikation för bedrägeridetektion som använder djupa neurala nätverk (DNN) för att klassificera transaktioner som bedrägliga eller legitima utifrån transaktionsdata.
+
+domains: OMRÅDEN
+domainItem:
+  - Mjukvaruutveckling
+  - Cybersäkerhet
+  - Artificiell intelligens
+  - Formell verifiering
+  - IT-support och felsökning
+
+development: UTVECKLING
+systems: SYSTEM
+languages: SPRÅK
+
 otherLanguage:
   name: English
   file: en.html

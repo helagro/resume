@@ -49,19 +49,6 @@
                     </div>
 
                     <div class="pageContent">
-                        <h2>{{workExperience}}</h2>
-
-                        {{#each workExperienceItem}}
-                        <div class="infoItem">
-                            <h3>{{this.title}}, <a href="{{this.companyLink}}" target="_blank"
-                                    rel="noopener noreferrer">{{this.company}}</a></h3>
-                            <p class="bodyText">{{this.text}}</p>
-                            <p class="smallText">{{this.time}}</p>
-                        </div>
-                        {{/each}}
-                    </div>
-
-                    <div class="pageContent">
                         <h2>{{education}}</h2>
                         {{#each educationItem}}
                         <div class="infoItem">
@@ -73,6 +60,24 @@
                                 </a>
                                 {{/sourceExists}}
                             </p>
+                            <p class="smallText">{{this.time}}</p>
+                        </div>
+                        {{/each}}
+                    </div>
+
+                    <div class="pageContent">
+                        <h2>{{workExperience}}</h2>
+
+                        {{#each workExperienceItem}}
+                        <div class="infoItem">
+                            <h3>{{this.title}}, {{#if this.companyLink}}
+                                <a href="{{this.companyLink}}" target="_blank"
+                                    rel="noopener noreferrer">{{this.company}}</a>
+                                {{else}}
+                                <span>{{this.company}}</span>
+                                {{/if}}
+                            </h3>
+                            <p class="bodyText">{{this.text}}</p>
                             <p class="smallText">{{this.time}}</p>
                         </div>
                         {{/each}}
@@ -91,36 +96,76 @@
                     </div>
                     {{/if}}
 
+                    {{#if project}}
+                    <div class="pageContent">
+                        <h2>{{project}}</h2>
+                        {{#each projectItem}}
+                        <div class="infoItem">
+                            <h3>{{#if this.link}}
+                                <a href="{{this.link}}" target="_blank" rel="noopener noreferrer">{{this.title}}</a>
+                                {{else}}
+                                <span>{{this.title}}</span>
+                                {{/if}}
+                            </h3>
+                            <p class="bodyText">{{this.text}}</p>
+                            <p class="smallText">{{this.time}}</p>
+                        </div>
+                        {{/each}}
+                    </div>
+                    {{/if}}
+
                 </div>
 
                 <div class="rightColumn">
                     <div>
-                        <h2>{{qualifications}}</h2>
+                        <h2>{{domains}}</h2>
 
-                        {{#each qualification}}
+                        {{#each domainItem}}
                         <p class="largeText">{{this}}</p>
                         {{/each}}
                     </div>
 
                     <div>
-                        <h2>{{hobbies}}</h2>
+                        <h2>{{development}}</h2>
 
-                        {{#each hobbyItem}}
-                        <p class="largeText">{{this}}</p>
-                        {{/each}}
-                    </div>
-
-                    <div>
-                        <h2>{{techniques}}</h2>
-
-                        {{#each techniqueItem}}
-                        <a href="{{this.link}}" target="_blank" rel="noopener noreferrer"
-                            class="{{#isMissing this.link}}disabled{{/isMissing}}">
+                        {{#each developmentItem}}
+                        {{#if this.link}}
+                        <a href="{{this.link}}" target="_blank" rel="noopener noreferrer">
                             <p class="largeText">{{this.name}}</p>
                         </a>
+                        {{else}}
+                        <p class="largeText">{{this.name}}</p>
+                        {{/if}}
                         {{/each}}
                     </div>
 
+                    <div>
+                        <h2>{{systems}}</h2>
+
+                        {{#each systemItem}}
+                        {{#if this.link}}
+                        <a href="{{this.link}}" target="_blank" rel="noopener noreferrer">
+                            <p class="largeText">{{this.name}}</p>
+                        </a>
+                        {{else}}
+                        <p class="largeText">{{this.name}}</p>
+                        {{/if}}
+                        {{/each}}
+                    </div>
+
+                    <div>
+                        <h2>{{languages}}</h2>
+
+                        {{#each languageItem}}
+                        {{#if this.link}}
+                        <a href="{{this.link}}" target="_blank" rel="noopener noreferrer">
+                            <p class="largeText">{{this.name}}</p>
+                        </a>
+                        {{else}}
+                        <p class="largeText">{{this.name}}</p>
+                        {{/if}}
+                        {{/each}}
+                    </div>
 
                     <div class="linkRow">
                         <a href="https://www.linkedin.com/in/henrik-lagrosen" target="_blank" rel="noopener noreferrer">
@@ -225,6 +270,7 @@
         </div>
     </footer>
 
+    <script src="script/variables.js"></script>
     <script src="script/env.js"></script>
     <script src="script/main.js"></script>
 </body>
