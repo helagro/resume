@@ -16,18 +16,24 @@ body
     margin: 0
     min-height: 100vh
     height: 100vh
-    background-color: var.$behind-page-color
+
+    @media screen
+        background-color: var.$behind-page-color
 
 main
-    display: grid
-    grid-template-columns: auto max-content
-    margin: auto
+    margin: 0 auto
     max-width: max-content
-    column-gap: 0.8em
-    padding-bottom: 4em
+    display: grid
+    grid-template-columns: 100% 0
+
+    @media screen
+        padding-bottom: 4em
 
     @media screen and (max-width: var.$sidebar-to-row-size)
         padding-bottom: 7em
+
+    pages
+        margin: 0
 
 label
     user-select: none

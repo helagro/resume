@@ -4,7 +4,11 @@ function showPFP(value) {
 }
 
 function showPageMarkers(value) {
-  document.getElementById('pageMarkers').style.display = value ? 'grid' : 'none'
+  document.getElementsByTagName('main')[0].style.marginTop = value ? '5em' : '0'
+
+  for (const elem of document.getElementsByClassName('pageMarkers')) {
+    elem.style.display = value ? 'grid' : 'none'
+  }
 }
 
 /* --------------------- CONTACT DETAILS -------------------- */

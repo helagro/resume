@@ -7,7 +7,6 @@ section
     width: 100vw
     box-sizing: border-box
     min-height: var.$page-height
-    margin: 1em 0
     padding: 1em 2em 1em 3.5em
     background-color: var.$page-color
     position: relative
@@ -15,8 +14,11 @@ section
     column-gap: 1.3em
     grid-template-columns: var.$page-grid-division
     grid-template-rows: max-content max-content
-    box-shadow: 0.1em 0.1em 0.5em var.$shadow-color
     overflow: hidden
+
+    @media screen
+        box-shadow: 0.1em 0.1em 0.5em var.$shadow-color
+        margin: 1em 0
 
     //Makes the sidebar become a row on mobile
     @media (max-width: var.$sidebar-to-row-size)

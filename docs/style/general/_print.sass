@@ -9,9 +9,11 @@
 @media print
 
     main
-        margin: 0
+        margin: 0 !important
         padding: 0 !important
         max-width: none
+
+        // NOTE - For debugging
         background-color: red
 
     .infoItem
@@ -23,7 +25,6 @@
         height: auto
         min-height: auto
         max-height: var.$page-height
-        overflow: hidden
         width: 100%
         max-width: 100%
         margin: 0

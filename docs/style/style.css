@@ -3,6 +3,7 @@
 /* ------------------------- COLORS ------------------------- */
 /* -------------------------- MEDIA ------------------------- */
 .optionsPanelContainer .optionsPanel {
+  margin-left: 1.5em;
   padding: 0.2em 0 0 1em;
   height: -moz-min-content;
   height: min-content;
@@ -127,7 +128,6 @@ section {
   width: 100vw;
   box-sizing: border-box;
   min-height: 297mm;
-  margin: 1em 0;
   padding: 1em 2em 1em 3.5em;
   background-color: #fff;
   position: relative;
@@ -136,8 +136,13 @@ section {
        column-gap: 1.3em;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: max-content max-content;
-  box-shadow: 0.1em 0.1em 0.5em #bdbdbd;
   overflow: hidden;
+}
+@media screen {
+  section {
+    box-shadow: 0.1em 0.1em 0.5em #bdbdbd;
+    margin: 1em 0;
+  }
 }
 @media (max-width: 42em) {
   section {
@@ -241,7 +246,7 @@ h2 {
   color: #005eab;
   font-size: 1.1em;
   line-height: 1.1em;
-  margin: 0.6em 0 0.4em 0;
+  margin: 1.2em 0 0.2em 0;
   font-weight: 500;
   letter-spacing: 0.08em;
 }
@@ -296,7 +301,7 @@ a.disabled {
 }
 @media print {
   main {
-    margin: 0;
+    margin: 0 !important;
     padding: 0 !important;
     max-width: none;
     background-color: red;
@@ -310,7 +315,6 @@ a.disabled {
     height: auto;
     min-height: auto;
     max-height: 297mm;
-    overflow: hidden;
     width: 100%;
     max-width: 100%;
     margin: 0;
@@ -323,44 +327,82 @@ a.disabled {
   }
 }
 .pageMarkers {
-  position: absolute;
-  margin-top: 1em;
-  margin-left: -6.8em;
-  width: 3em;
   display: none;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr;
 }
 .pageMarkers .pageMarkerPair {
   display: grid;
-  grid-template-columns: 1fr 1em;
-  width: 100%;
 }
 .pageMarkers .pageMarkerPair .pageMarkerLabel {
   width: 1.4em;
   text-align: right;
   padding-right: 0.4em;
   color: #aaa;
-  margin-top: 95mm;
 }
 .pageMarkers .pageMarkerPair .pageMarker {
   border: 1px solid #aaa;
+}
+
+.pageMarkersHorizontal {
+  position: fixed;
+  grid-auto-flow: row;
+  grid-template-rows: 1fr;
+  margin-top: 1em;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pageMarkersHorizontal .pageMarkerPair {
+  grid-template-rows: 1fr 1em;
+  height: -moz-min-content;
+  height: min-content;
+}
+.pageMarkersHorizontal .pageMarkerPair .pageMarkerLabel {
+  margin: 0 0 0 70mm;
+}
+.pageMarkersHorizontal .pageMarkerPair .pageMarker {
+  width: 1.4em;
+  border-bottom: none;
+}
+.pageMarkersHorizontal .pageMarkerPair #pageMarkerA4 {
+  width: 210mm;
+  max-width: 210mm;
+}
+.pageMarkersHorizontal .pageMarkerPair #pageMarkerA5 {
+  width: 148mm;
+  max-width: 148mm;
+}
+
+.pageMarkersVertical {
+  position: absolute;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+  width: 3em;
+}
+@media screen {
+  .pageMarkersVertical {
+    margin-top: 1em;
+    margin-left: -6.8em;
+  }
+}
+.pageMarkersVertical .pageMarkerPair {
+  grid-template-columns: 1fr 1em;
+  width: 100%;
+}
+.pageMarkersVertical .pageMarkerPair .pageMarkerLabel {
+  margin-top: 95mm;
+}
+.pageMarkersVertical .pageMarkerPair .pageMarker {
   border-right: none;
 }
-.pageMarkers .pageMarkerPair #pageMarkerA4 {
+.pageMarkersVertical .pageMarkerPair #pageMarkerA4 {
   height: 297mm;
   max-height: 297mm;
 }
-.pageMarkers .pageMarkerPair #pageMarkerA5 {
+.pageMarkersVertical .pageMarkerPair #pageMarkerA5 {
   height: 210mm;
   max-height: 210mm;
 }
 
-@media print {
-  .pageMarkers {
-    display: none !important;
-  }
-}
 * {
   font-family: "EB Garamond";
 }
@@ -369,23 +411,32 @@ body {
   margin: 0;
   min-height: 100vh;
   height: 100vh;
-  background-color: #f0f0f0;
+}
+@media screen {
+  body {
+    background-color: #f0f0f0;
+  }
 }
 
 main {
-  display: grid;
-  grid-template-columns: auto max-content;
-  margin: auto;
+  margin: 0 auto;
   max-width: -moz-max-content;
   max-width: max-content;
-  -moz-column-gap: 0.8em;
-       column-gap: 0.8em;
-  padding-bottom: 4em;
+  display: grid;
+  grid-template-columns: 100% 0;
+}
+@media screen {
+  main {
+    padding-bottom: 4em;
+  }
 }
 @media screen and (max-width: 42em) {
   main {
     padding-bottom: 7em;
   }
+}
+main pages {
+  margin: 0;
 }
 
 label {

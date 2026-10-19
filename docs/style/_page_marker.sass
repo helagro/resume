@@ -1,28 +1,66 @@
 @use "general/_var"
 
 .pageMarkers
-  position: absolute
-  margin-top: 1em
-  margin-left: -6.8em
-  width: 3em
   display: none
-  grid-auto-flow: column
-  grid-template-columns: 1fr
 
   .pageMarkerPair
     display: grid
-    grid-template-columns: 1fr 1em
-    width: 100%
 
     .pageMarkerLabel
       width: 1.4em
       text-align: right
       padding-right: 0.4em
       color: #aaa
-      margin-top: 95mm
 
     .pageMarker
       border: 1px solid #aaa
+
+.pageMarkersHorizontal
+  position: fixed
+  grid-auto-flow: row
+  grid-template-rows: 1fr
+  margin-top: 1em
+  top: 0
+  left: 50%
+  transform: translateX(-50%)
+
+  .pageMarkerPair
+    grid-template-rows: 1fr 1em
+    height: min-content
+
+    .pageMarkerLabel
+      margin: 0 0 0 70mm
+
+    .pageMarker
+      width: 1.4em
+      border-bottom: none
+
+    #pageMarkerA4
+      width: 210mm
+      max-width: 210mm
+
+    #pageMarkerA5
+      width: 148mm
+      max-width: 148mm
+
+.pageMarkersVertical
+  position: absolute
+  grid-auto-flow: column
+  grid-template-columns: 1fr
+  width: 3em
+
+  @media screen
+    margin-top: 1em
+    margin-left: -6.8em
+
+  .pageMarkerPair
+    grid-template-columns: 1fr 1em
+    width: 100%
+
+    .pageMarkerLabel
+      margin-top: 95mm
+
+    .pageMarker
       border-right: none
 
     #pageMarkerA4
@@ -33,6 +71,6 @@
       height: 210mm
       max-height: 210mm
 
-@media print
-  .pageMarkers
-    display: none !important
+// @media print
+//   .pageMarkers
+//     display: none !important
