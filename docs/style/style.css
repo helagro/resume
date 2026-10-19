@@ -175,11 +175,11 @@ section .rightColumn div {
   margin-top: 2em;
 }
 section .rightColumn div h2 {
-  color: #3a3a3a;
+  color: #818181;
 }
 @media (max-width: 42em) {
   section .rightColumn div h2 {
-    color: #818181;
+    color: #005eab;
   }
 }
 
