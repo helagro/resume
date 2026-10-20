@@ -3,12 +3,12 @@
 /* ------------------------- COLORS ------------------------- */
 /* -------------------------- MEDIA ------------------------- */
 .optionsPanelContainer .optionsPanel {
-  margin-left: 1.5em;
+  margin-left: 1.4em;
   padding: 0.2em 0 0 1em;
   height: -moz-min-content;
   height: min-content;
   display: grid;
-  top: 3rem;
+  top: 3.4rem;
   grid-template-columns: auto;
   border-radius: 0.4em 0 0 0.4em;
   display: none;
@@ -29,6 +29,8 @@
   background: none;
   border: none;
   padding: 0;
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.08em;
   text-decoration: underline;
   cursor: pointer;
   width: -moz-max-content;
@@ -36,11 +38,26 @@
   height: -moz-min-content;
   height: min-content;
 }
+.optionsPanelContainer .optionsPanel button:hover {
+  text-underline-offset: 0.12em;
+}
 @media (max-width: 30em) {
   .optionsPanelContainer .optionsPanel #showImages, .optionsPanelContainer .optionsPanel #showImagesLabel {
     cursor: not-allowed;
     opacity: 0.3;
   }
+}
+.optionsPanelContainer .optionCheckboxes {
+  display: grid;
+  grid-template-columns: auto auto;
+  -moz-column-gap: 0.3em;
+       column-gap: 0.3em;
+  row-gap: 0.1em;
+}
+.optionsPanelContainer .optionCheckboxes input[type=checkbox] {
+  accent-color: #2196F3;
+  margin-top: 0.3em;
+  scale: 1.2;
 }
 .optionsPanelContainer #toggleOptionsBtn {
   background-color: #e3e3e3;
@@ -197,7 +214,7 @@ header .floor {
   margin-top: auto;
 }
 header .columns {
-  margin-left: 0.42em;
+  margin-left: 0.72em;
 }
 header .mediumText {
   margin-left: 0.9em;
@@ -223,12 +240,14 @@ header .profilePic {
   display: grid;
   grid-auto-columns: max-content;
   grid-auto-flow: column;
-  -moz-column-gap: 5%;
-       column-gap: 5%;
+  -moz-column-gap: 4.8%;
+       column-gap: 4.8%;
 }
 .columns .columnDivider {
-  border-right: 0.1em solid #818181;
-  height: 75%;
+  border-right: 0.02em solid #bbbbbb;
+  border-left: 0.02em solid #bbbbbb;
+  border-radius: 1em;
+  height: 77.5%;
   margin-top: 0.2em;
 }
 
@@ -446,11 +465,13 @@ label {
 }
 
 a {
-  text-decoration: none;
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.08em;
   color: #1b1b1b;
 }
 a:hover {
   text-decoration: underline;
+  text-underline-offset: 0.12em;
 }
 a.importantLink {
   text-decoration: underline;

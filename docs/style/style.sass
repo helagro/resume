@@ -39,11 +39,14 @@ label
     user-select: none
 
 a
-    text-decoration: none
+    // text-decoration: none
+    text-decoration-thickness: 0.05em
+    text-underline-offset: 0.08em
     color: var.$text-color
 
     &:hover
         text-decoration: underline
+        text-underline-offset: 0.12em
 
     &.importantLink
         text-decoration: underline

@@ -71,8 +71,7 @@
                             <h3>{{this.title}}</h3>
                             <p class="bodyText">{{this.text}}
                                 {{#sourceExists this.resLink}}
-                                <a href="{{this.resLink}}" target="_blank" rel="noopener noreferrer"
-                                    class="importantLink">{{this.resText}}
+                                <a href="{{this.resLink}}" target="_blank" rel="noopener noreferrer">{{this.resText}}
                                 </a>
                                 {{/sourceExists}}
                             </p>
@@ -221,7 +220,7 @@
             <div class="optionsPanel" id="optionsContent">
                 <h2>Options</h2>
                 <div>
-                    <a href="{{otherLanguage.file}}">
+                    <a class="importantLink" href="{{otherLanguage.file}}">
                         <p class="largeText">{{otherLanguage.name}}</p>
                     </a>
                 </div>
@@ -232,19 +231,19 @@
 
                 <div style="height: 0.4em"></div>
 
-                <p class="showImageCheck">
+                <div class="optionCheckboxes">
                     <label for="showImages"><span class="largeText" id="showImagesLabel">Show Image</span></label>
                     <input type="checkbox" name="showImages" id="showImages" autocomplete="off"
                         onchange="showPFP(this.checked)">
-                </p>
-
-                <p class="showImageCheck">
                     <label for="showMarkings"><span class="largeText" id="showMarkingsLabel">Show
                             Markings</span></label>
                     <input type="checkbox" name="showMarkings" id="showMarkings" autocomplete="off"
                         onchange="showPageMarkers(this.checked)">
-                </p>
-
+                    <label for="highlightLinks"><span class="largeText" id="showMarkingsLabel">Underline
+                            Links</span></label>
+                    <input type="checkbox" checked name="highlightLinks" id="highlightLinks" autocomplete="off"
+                        onchange="highlightLinks(this.checked)">
+                </div>
             </div>
         </div>
 

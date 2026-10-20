@@ -103,7 +103,7 @@
                                     rel="noopener noreferrer">ALS Danderyd</a>
                             </h3>
                             <p class="bodyText">Förberedde inför och städade efter laboratorieanalyser, ansvarade för hantering av passerkort och gav IT-support, inklusive installation av datorer och felsökning av anslutna enheter.</p>
-                            <p class="smallText">April 2022 — Augusti 2022, Danderyd</p>
+                            <p class="smallText">April 2022 — Augusti 2022, Stockholm</p>
                         </div>
                     </div>
 
@@ -218,7 +218,7 @@
             <div class="optionsPanel" id="optionsContent">
                 <h2>Options</h2>
                 <div>
-                    <a href="en.html">
+                    <a class="importantLink" href="en.html">
                         <p class="largeText">English</p>
                     </a>
                 </div>
@@ -229,19 +229,19 @@
 
                 <div style="height: 0.4em"></div>
 
-                <p class="showImageCheck">
+                <div class="optionCheckboxes">
                     <label for="showImages"><span class="largeText" id="showImagesLabel">Show Image</span></label>
                     <input type="checkbox" name="showImages" id="showImages" autocomplete="off"
                         onchange="showPFP(this.checked)">
-                </p>
-
-                <p class="showImageCheck">
                     <label for="showMarkings"><span class="largeText" id="showMarkingsLabel">Show
                             Markings</span></label>
                     <input type="checkbox" name="showMarkings" id="showMarkings" autocomplete="off"
                         onchange="showPageMarkers(this.checked)">
-                </p>
-
+                    <label for="highlightLinks"><span class="largeText" id="showMarkingsLabel">Underline
+                            Links</span></label>
+                    <input type="checkbox" checked name="highlightLinks" id="highlightLinks" autocomplete="off"
+                        onchange="highlightLinks(this.checked)">
+                </div>
             </div>
         </div>
 

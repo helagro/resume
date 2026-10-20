@@ -3,11 +3,11 @@
 .optionsPanelContainer
 
     .optionsPanel
-        margin-left: 1.5em
+        margin-left: 1.4em
         padding: 0.2em 0 0 1em
         height: min-content
         display: grid
-        top: 3rem
+        top: 3.4rem
         grid-template-columns: auto
         border-radius: 0.4em 0 0 0.4em
         display: none
@@ -27,15 +27,31 @@
             background: none
             border: none
             padding: 0
+            text-decoration-thickness: 0.05em
+            text-underline-offset: 0.08em
             text-decoration: underline
             cursor: pointer
             width: max-content
             height: min-content
 
+            &:hover
+                text-underline-offset: 0.12em
+
         #showImages, #showImagesLabel
             @media (max-width: var.$pfp-min-screen-width)
                 cursor: not-allowed
                 opacity: 0.3
+
+    .optionCheckboxes
+        display: grid
+        grid-template-columns: auto auto
+        column-gap: 0.3em
+        row-gap: 0.1em
+
+        input[type="checkbox"]
+            accent-color: var.$strong-color
+            margin-top: 0.3em
+            scale: 1.2
 
     #toggleOptionsBtn
         background-color: var.$options-background

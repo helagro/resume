@@ -11,6 +11,18 @@ function showPageMarkers(value) {
   }
 }
 
+function highlightLinks(value) {
+  const links = document.getElementsByTagName('a')
+
+  for (const elem of links) {
+    if (value && !elem.classList.contains('disabled')) {
+      elem.style.textDecoration = 'underline'
+    } else if (!value && !elem.classList.contains('importantLink')) {
+      elem.style.textDecoration = 'none'
+    }
+  }
+}
+
 /* --------------------- CONTACT DETAILS -------------------- */
 const phoneNrScrambled = window.env.phoneNrScrambled
 const emailAddrScrambled = window.env.emailAddrScrambled
